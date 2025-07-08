@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
-import {ThemeToggle} from "@/components/ThemeToggleView";
+import {ThemeToggle} from "@/components/providers/ThemeToggleView";
 
 export default function Layout({
    children,
@@ -11,7 +11,6 @@ export default function Layout({
         <main className="font-work-sans">
             <Navbar />
             <ThemeToggle />
-
 
             {children}
         </main>
