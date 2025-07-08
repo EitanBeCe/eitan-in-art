@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
+import {ThemeToggle} from "@/components/ThemeToggleView";
 
 export default function Layout({
    children,
@@ -7,17 +8,12 @@ export default function Layout({
     children: React.ReactNode;
 }>) {
     return (
-        // <ThemeProvider
-        //     attribute="class"
-        //     defaultTheme="dark"
-        //     enableSystem={false}
-        //     forcedTheme="dark"
-        // >
-            <main className="font-work-sans">
-                <Navbar />
+        <main className="font-work-sans">
+            <Navbar />
+            <ThemeToggle />
 
-                {children}
-            </main>
-        // </ThemeProvider>
+
+            {children}
+        </main>
     );
 }

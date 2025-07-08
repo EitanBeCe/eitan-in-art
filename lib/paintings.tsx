@@ -9,7 +9,7 @@ const paintings: PaintingCodable[] = [
   {
     slug: "am-israel-chai",
     title: "Am Israel Chai. Israel Lives on 23 languages",
-    description: "",
+    description: "alala",
     image: "/amIsraelChai/amIsraelChai1.jpeg",
   },
 ]

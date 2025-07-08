@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import {ThemeProvider} from "next-themes";
+import {ThemeProvider} from "@/components/providers/ThemeProvider";
 
 const workSans = localFont({
     src: [
@@ -66,16 +66,11 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <ThemeProvider
-                attribute="class"
-                defaultTheme="dark"
-                // enableSystem={false}
-                // forcedTheme="dark"
-            >
                 <body className={workSans.variable}>
-                    {children}
+                    <ThemeProvider>
+                        {children}
+                    </ThemeProvider>
                 </body>
-            </ThemeProvider>
         </html>
     );
 }

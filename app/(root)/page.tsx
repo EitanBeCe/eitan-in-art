@@ -12,7 +12,9 @@ export default function Home() {
                 <ul className="mt-7 card_grid">
                     {paintings?.length > 0 ? (
                         paintings.map((p: PaintingCodable) => (
-                            <PaintingCardRowView key={p?.slug} />
+                            <PaintingCardRowView
+                                {...p}
+                            />
                         ))
                     ) : (
                         <p className="no-results">No startups found</p>
