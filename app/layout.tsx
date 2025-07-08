@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-// import "easymde/dist/easymde.min.css";
-// import { Toaster } from "@/components/ui/toaster";
+import {ThemeProvider} from "next-themes";
 
 const workSans = localFont({
     src: [
@@ -66,11 +65,17 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
-            <body className={workSans.variable}>
-                {children}
-                {/*<Toaster />*/}
-            </body>
+        <html lang="en" suppressHydrationWarning>
+            <ThemeProvider
+                attribute="class"
+                defaultTheme="dark"
+                // enableSystem={false}
+                // forcedTheme="dark"
+            >
+                <body className={workSans.variable}>
+                    {children}
+                </body>
+            </ThemeProvider>
         </html>
     );
 }

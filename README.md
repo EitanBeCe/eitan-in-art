@@ -1,6 +1,9 @@
 Eitan's Art Paintings Website
 
+Мб сделать как игру где ты ходишь по галерее с картинами, Веб галлерея... 3js?
 
+На старте: JSON-файл + изображения в /public/images
+Когда разрастётся: перейти на CMS (Sanity — лучший вариант для художника)
 
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).

@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "@/app/components/Navbar";
+import Navbar from "@/components/Navbar";
 
 export default function Layout({
    children,
@@ -7,10 +7,17 @@ export default function Layout({
     children: React.ReactNode;
 }>) {
     return (
-        <main className="font-work-sans">
-            <Navbar />
+        // <ThemeProvider
+        //     attribute="class"
+        //     defaultTheme="dark"
+        //     enableSystem={false}
+        //     forcedTheme="dark"
+        // >
+            <main className="font-work-sans">
+                <Navbar />
 
-            {children}
-        </main>
+                {children}
+            </main>
+        // </ThemeProvider>
     );
 }
