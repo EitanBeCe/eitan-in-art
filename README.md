@@ -11,6 +11,7 @@ Eitan's Art Paintings Website
 - Next.js
 - AceternityUI
 - shadcn
+- KeenSlider
 - ThemeProvider
 
 

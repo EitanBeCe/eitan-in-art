@@ -2,7 +2,7 @@ export interface PaintingCodable {
   slug: string;
   title: string;
   description: string;
-  image: string;
+  images: string[];
 }
 
 const paintings: PaintingCodable[] = [
@@ -10,7 +10,9 @@ const paintings: PaintingCodable[] = [
     slug: "am-israel-chai",
     title: "Am Israel Chai. Israel Lives on 23 languages",
     description: "alala",
-    image: "/amIsraelChai/amIsraelChai1.jpeg",
+    images: [
+      "/amIsraelChai/amIsraelChai1.jpeg",
+    ]
   },
 ]
 
