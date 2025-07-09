@@ -146,16 +146,6 @@ export default function ImageCarousel({ images }: Props) {
                     </button>
                 </div>
             )}
-
-            {/* PLAY / PAUSE */}
-            {/*<div className="flex justify-center mt-4">*/}
-            {/*    <button*/}
-            {/*        onClick={() => setAutoplay((prev) => !prev)}*/}
-            {/*        className="text-sm px-4 py-1.5 rounded-full bg-black text-white hover:bg-gray-800 transition"*/}
-            {/*    >*/}
-            {/*        {autoplay ? 'Pause' : 'Play'}*/}
-            {/*    </button>*/}
-            {/*</div>*/}
         </div>
     );
 }
@@ -171,51 +161,3 @@ const PauseIcon = () => (
         <path d="M6 4h3v12H6zM11 4h3v12h-3z" />
     </svg>
 );
-
-
-
-
-
-
-// 'use client';
-//
-// import { useKeenSlider } from 'keen-slider/react';
-// import 'keen-slider/keen-slider.min.css';
-// import Image from 'next/image';
-// import { useEffect, useState } from 'react';
-//
-// type Props = {
-//     images: { src: string; alt?: string }[];
-// };
-//
-// export default function ImageCarouselView({ images }: Props) {
-//     const [loaded, setLoaded] = useState(false);
-//
-//     const [sliderRef] = useKeenSlider<HTMLDivElement>({
-//         loop: true,
-//         mode: 'snap', //'snap' | 'free' | 'free-snap'
-//         slides: { perView: 1, spacing: 10 },
-//         drag: true,
-//         created: () => setLoaded(true),
-//     });
-//
-//     return (
-//         <div className="w-full max-w-xl mx-auto">
-//             <div ref={sliderRef} className="keen-slider rounded-lg overflow-hidden">
-//                 {images.map((img, index) => (
-//                     <div key={index} className="keen-slider__slide">
-//                         <Image
-//                             src={img.src}
-//                             alt={img.alt || `image-${index}`}
-//                             width={1200}
-//                             height={900}
-//                             className="w-full h-auto object-contain"
-//                             sizes="(max-width: 768px) 100vw, 800px"
-//                             priority={index === 0}
-//                         />
-//                     </div>
-//                 ))}
-//             </div>
-//         </div>
-//     );
-// }
