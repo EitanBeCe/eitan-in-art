@@ -9,9 +9,7 @@ interface PageProps {
 }
 
 export default async function Page({ params }: PageProps) {
-    // const slug = await Promise.resolve(params.slug);
-    const { slug } = await params
-    const painting = paintings.find((p) => p.slug === slug);
+    const painting = paintings.find((p) => p.slug === params.slug);
 
     if (!painting) {
         notFound();
