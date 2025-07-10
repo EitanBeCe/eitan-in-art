@@ -8,8 +8,10 @@ interface PageProps {
     };
 }
 
-export default function Page({ params }: PageProps) {
-    const painting = paintings.find((p) => p.slug === params.slug);
+export default async function Page({ params }: PageProps) {
+    // const slug = await Promise.resolve(params.slug);
+    const { slug } = await params
+    const painting = paintings.find((p) => p.slug === slug);
 
     if (!painting) {
         notFound();

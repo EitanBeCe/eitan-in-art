@@ -6,13 +6,12 @@ import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 
 type Props = {
-    images: { src: string; alt?: string }[];
+    images: string[];
 };
 
 export default function ImageCarousel({ images }: Props) {
     const timer = useRef<NodeJS.Timeout | null>(null);
     const [currentSlide, setCurrentSlide] = useState(0);
-    // const [activeIndex, setActiveIndex] = useState(0);
     const [isMounted, setIsMounted] = useState(false);
     const [autoplay, setAutoplay] = useState(true);
 
@@ -26,7 +25,6 @@ export default function ImageCarousel({ images }: Props) {
         },
         slideChanged(slider) {
             setCurrentSlide(slider.track.details.rel);
-            // setActiveIndex(slider.track.details.rel);
         },
         created() {
             setIsMounted(true);
@@ -53,45 +51,14 @@ export default function ImageCarousel({ images }: Props) {
 
             {/* SLIDER */}
             <div ref={sliderRef} className="keen-slider rounded-xl">
-            {/*    {images.map((img, index) => {*/}
-            {/*        const isActive = index === activeIndex;*/}
-            {/*        // const isAdjacent =*/}
-            {/*        //     index === activeIndex - 1 || index === activeIndex + 1;*/}
-
-            {/*        return (*/}
-            {/*            <div*/}
-            {/*                key={index}*/}
-            {/*                className="keen-slider__slide flex justify-center items-center transition-transform duration-300"*/}
-            {/*            >*/}
-            {/*                <div*/}
-            {/*                    className={`transform transition-transform duration-300 ${*/}
-            {/*                        isActive*/}
-            {/*                            ? 'scale-100'*/}
-            {/*                            : 'scale-90 opacity-90'*/}
-            {/*                    }`}*/}
-            {/*                >*/}
-            {/*                    <Image*/}
-            {/*                        src={img.src}*/}
-            {/*                        alt={img.alt || `image-${index}`}*/}
-            {/*                        width={1000}*/}
-            {/*                        height={800}*/}
-            {/*                        className="w-full h-auto object-contain max-h-[80vh] rounded-md"*/}
-            {/*                        sizes="(max-width: 768px) 100vw, 900px"*/}
-            {/*                        priority={index === 0}*/}
-            {/*                    />*/}
-            {/*                </div>*/}
-            {/*            </div>*/}
-            {/*        );*/}
-            {/*    })}*/}
-
                 {images.map((img, index) => (
                     <div
                         key={index}
                         className="keen-slider__slide flex justify-center items-center"
                     >
                         <Image
-                            src={img.src}
-                            alt={img.alt || `image-${index}`}
+                            src={img}
+                            alt={`image-${index}`}
                             width={1000}
                             height={800}
                             className="w-full h-auto object-contain max-h-[80vh] rounded-md"
