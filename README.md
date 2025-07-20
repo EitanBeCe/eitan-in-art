@@ -1,6 +1,7 @@
 Eitan's Art Paintings Website
 
 // ФУТЕР ИНСТА
+// Пихнуть Кругляш с мордой и градиентом
 // FIXME: Продумать 404 page not found?
 // FIXME: разные валюты?
 // FIXME: чек мобилу

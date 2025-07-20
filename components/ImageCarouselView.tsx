@@ -23,6 +23,20 @@ export default function ImageCarousel({ images }: Props) {
             spacing: 10,
             origin: 'center',
         },
+        breakpoints: {
+            '(min-width: 400px)': {
+                slides: { perView: 1.2, origin: 'center', spacing: 10 }
+            },
+            '(min-width: 768px)': {
+                slides: { perView: 1.6, origin: 'center', spacing: 10 }
+            },
+            '(min-width: 1024px)': {
+                slides: { perView: 2.4, origin: 'center', spacing: 10 }
+            },
+            '(min-width: 1440px)': {
+                slides: { perView: 4.2, origin: 'center', spacing: 10 }
+            }
+        },
         slideChanged(slider) {
             setCurrentSlide(slider.track.details.rel);
         },
@@ -47,7 +61,7 @@ export default function ImageCarousel({ images }: Props) {
     const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
 
     return (
-        <div className="w-full max-w-6xl mx-auto relative overflow-hidden">
+        <div className="w-full max-w-full mx-auto relative overflow-hidden">
 
             {/* SLIDER */}
             <div ref={sliderRef} className="keen-slider rounded-xl">

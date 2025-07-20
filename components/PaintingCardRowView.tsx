@@ -34,6 +34,7 @@ export function PaintingCardRowView({ slug, title, description, images }: Painti
                             width="1000"
                             className="h-80 w-full object-cover rounded-xl group-hover/card:shadow-xl"
                             alt={title.slice(0, 16)}
+                            priority
                         />
                     </CardItem>
 

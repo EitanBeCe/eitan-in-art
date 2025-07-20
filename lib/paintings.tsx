@@ -5,6 +5,9 @@ export interface PaintingCodable {
   paint: string;
   size: string;
   colors: string;
+  isSold: boolean;
+  isPrintsAvailable: boolean;
+  wasExhibited: boolean;
   price: number;
   images: string[];
 }
@@ -12,9 +15,8 @@ export interface PaintingCodable {
 const paintings: PaintingCodable[] = [
   {
     slug: "am-israel-chai",
-    title: "Am Israel Chai. Israel Lives on 23 languages",
-    description: `23 languages of Am Israel Chai 🔴⚪️⚫️
-"Israel Lives: iron dome, art of pure lines"
+    title: "Am Israel Chai. Israel Lives in 23 languages",
+    description: `🔴 ⚪️ ⚫️ "Israel Lives: iron dome, art of pure lines"
 
 Israel
 1. Eng: Lives (2 times)
@@ -42,10 +44,14 @@ Israel
 23. Russian: Израиль Жив: Iron Dome, искусство чистых линий`,
     paint: "Acrylic on Canvas",
     size: "40x40",
-    colors: "⚫ 🔴 ⚪️",
+    colors: "⚫️ 🔴 ⚪️",
+    isSold: false,
+    isPrintsAvailable: false,
+    wasExhibited: true,
     price: 20000,
     images: [
       '/amIsraelChai/amIsraelChai1.jpeg',
+      '/amIsraelChai/amIsraelChai11.jpeg',
       '/amIsraelChai/amIsraelChai2.jpeg',
       '/amIsraelChai/amIsraelChai3.jpeg',
       '/amIsraelChai/amIsraelChai4.jpeg',

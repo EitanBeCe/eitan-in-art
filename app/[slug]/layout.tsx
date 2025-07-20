@@ -1,6 +1,7 @@
 import React from "react";
-import Navbar from "@/components/Navbar";
+import NavbarView from "@/components/NavbarView";
 import {ThemeToggle} from "@/components/providers/ThemeToggleView";
+import FooterView from "@/components/FooterView";
 
 export default function Layout({
    children,
@@ -9,10 +10,12 @@ export default function Layout({
 }>) {
     return (
         <main className="font-work-sans">
-            <Navbar />
+            <NavbarView />
             <ThemeToggle />
 
             {children}
+
+            <FooterView />
         </main>
     );
 }
