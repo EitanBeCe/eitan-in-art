@@ -1,6 +1,6 @@
 import { PaintingCodable } from "@/lib/paintings";
 import Image from "next/image";
-import {CardCarousel} from "@/components/ui/card-carousel";
+import {CardCarouselView} from "@/components/ui/card-carousel";
 import React from "react";
 
 export function PaintingView({ title, description, images, paint, size, price, colors, isSold, isPrintsAvailable, wasExhibited }: PaintingCodable) {
@@ -18,47 +18,85 @@ export function PaintingView({ title, description, images, paint, size, price, c
                 />
             </div>
 
-            {/* Content */}
             <div className="py-4 relative">
             {/*<div className="mx-auto max-sm:px-3 px-8 py-4 relative">*/}
-                <h1 className="text-2xl md:text-3xl font-bold mb-4 text-center">{title}</h1>
+                <h1 className="text-2xl px-2 md:text-3xl font-bold mb-4 text-center">{title}</h1>
 
                 {/*<ImageCarouselView images={images} />*/}
 
-                {/*https://blocks.mvp-subha.me/*/}
-                {/*https://skiper-ui.com/*/}
-
-                <CardCarousel
+                <CardCarouselView
                     images={images.map((i) => ({ src: i, alt: title }))}
                     autoplayDelay={2000}
                     showPagination={true}
                     showNavigation={true}
                 />
 
-                {/* Technical details */}
-                <div className="max-w-2xl mx-auto mt-8 space-y-6">
-                    <div className="grid grid-cols-2 gap-4 text-lg bg-white/10 p-4 rounded-lg backdrop-blur-sm">
-                        <div className="space-y-2">
-                            <p><span className="font-semibold">Materials:</span> {paint}</p>
-                            <p><span className="font-semibold">Size:</span> {size}cm</p>
-                            <p><span className="font-semibold">Colors:</span> {colors}</p>
+                {/*Content*/}
+                <div className="flex flex-col lg:flex-row gap-8 px-4 max-w-7xl mx-auto">
+                    <div className="flex-1 space-y-6">
+                        {/* Technical details */}
+                        <div className="grid grid-cols-2 gap-4 text-lg bg-white/10 p-4 rounded-lg backdrop-blur-sm">
+                            <div className="space-y-2">
+                                <p><span className="font-semibold">Materials:</span> {paint}</p>
+                                <p><span className="font-semibold">Size:</span> {size}cm</p>
+                                <p><span className="font-semibold">Colors:</span> {colors}</p>
+                            </div>
+                            <div className="space-y-2">
+                                <p><span className="font-semibold">Price:</span> ₪{price.toLocaleString()}</p>
+                                <p><span className="font-semibold">Status:</span> {isSold ? "Sold" : "Available"}</p>
+                                <p><span className="font-semibold">Prints:</span> {isPrintsAvailable ? "Available" : "Original only"}</p>
+                                {wasExhibited && <p><span
+                                    className="font-semibold">Exhibition:</span> {wasExhibited ? "Has been exhibited" : "Not exhibited"}
+                                </p>}
+                            </div>
                         </div>
-                        <div className="space-y-2">
-                            <p><span className="font-semibold">Price:</span> ₪{price.toLocaleString()}</p>
-                            <p><span className="font-semibold">Status:</span> {isSold ? "Sold" : "Available"}</p>
-                            <p><span className="font-semibold">Prints:</span> {isPrintsAvailable ? "Available" : "Original only"}</p>
-                            {wasExhibited && <p><span
-                                className="font-semibold">Exhibition:</span> {wasExhibited ? "Has been exhibited" : "Not exhibited"}
-                            </p>}
-                        </div>
+
+                        {/* Description */}
+                        {description && (
+                            <p className="text-lg text-gray-700 dark:text-gray-300 whitespace-pre-wrap">
+                                {description}
+                            </p>
+                        )}
                     </div>
 
-                    {/* Description */}
-                    {description && (
-                        <p className="text-lg text-gray-700 dark:text-gray-300 whitespace-pre-wrap">
-                            {description}
-                        </p>
-                    )}
+                    {/* Side Block - additional info */}
+                    <div className="lg:w-80 shrink-0">
+                        <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm sticky top-4">
+                            <h2 className="text-xl font-bold mb-4">Print Information</h2>
+
+                            {/* Print Prices */}
+                            <div className="space-y-3 mb-6">
+                                <h3 className="font-semibold">Print Prices:</h3>
+                                <div className="space-y-2">
+                                    <p>Small (20x30cm) - ₪200</p>
+                                    <p>Medium (30x40cm) - ₪350</p>
+                                    <p>Large (50x70cm) - ₪600</p>
+                                </div>
+                            </div>
+
+                            {/* Shipping */}
+                            <div className="space-y-3 mb-6">
+                                <h3 className="font-semibold">Shipping:</h3>
+                                <div className="space-y-2">
+                                    <p>Israel: 2-3 business days</p>
+                                    <p>Worldwide: 7-14 business days</p>
+                                    <p>Free shipping over ₪500</p>
+                                </div>
+                            </div>
+
+                            {/* Production Time */}
+                            <div className="space-y-3">
+                                <h3 className="font-semibold">Production Time:</h3>
+                                <div className="space-y-2">
+                                    <p>Ready to ship: 3-5 business days</p>
+                                    <p>Custom sizes: 5-7 business days</p>
+                                </div>
+                            </div>
+
+                            {/* Contacts */}
+                            КОНТАКТЫЫЫЫЫ
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 "use client"
 
-import React, {useState} from "react"
+import React, {useEffect, useState} from "react"
 import Image from "next/image"
 import { Swiper, SwiperSlide } from "swiper/react"
 
@@ -16,8 +16,6 @@ import {
     Pagination,
 } from "swiper/modules"
 
-// import { Badge } from "@/components/ui/badge"
-
 interface CarouselProps {
     images: { src: string; alt: string }[]
     autoplayDelay?: number
@@ -25,7 +23,7 @@ interface CarouselProps {
     showNavigation?: boolean
 }
 
-export const CardCarousel: React.FC<CarouselProps> = ({
+export const CardCarouselView: React.FC<CarouselProps> = ({
   images,
   autoplayDelay = 1500,
   showPagination = true,
@@ -78,6 +76,19 @@ export const CardCarousel: React.FC<CarouselProps> = ({
 
     const [fullscreenImage, setFullscreenImage] = useState<string | null>(null);
 
+    useEffect(() => {
+        if (fullscreenImage) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
+    }, [fullscreenImage]);
+
+
     const handleImageClick = (img: string) => {
         setFullscreenImage(img);
     };
@@ -125,7 +136,6 @@ export const CardCarousel: React.FC<CarouselProps> = ({
                                         }
                                     }}
                                 }
-
                             >
                                 {images.map((image, index) => (
                                     <SwiperSlide key={index}>
@@ -145,7 +155,10 @@ export const CardCarousel: React.FC<CarouselProps> = ({
                                 ))}
                                 {images.map((image, index) => (
                                     <SwiperSlide key={index}>
-                                        <div className="size-full rounded-3xl">
+                                        <div
+                                            className="size-full rounded-3xl"
+                                            onClick={() => handleImageClick(image.src)}
+                                        >
                                             <Image
                                                 src={image.src}
                                                 width={200}
@@ -169,7 +182,7 @@ export const CardCarousel: React.FC<CarouselProps> = ({
                     onClick={() => setFullscreenImage(null)}
                 >
                     <button
-                        className="absolute top-4 right-4 text-white text-xl p-2 hover:bg-white/10 rounded-full"
+                        className="absolute top-4 right-4 text-white text-xl p-2 px-4 hover:bg-white/10 rounded-full"
                         onClick={() => setFullscreenImage(null)}
                     >
                         ✕

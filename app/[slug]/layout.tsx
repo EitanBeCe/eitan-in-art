@@ -12,6 +12,8 @@ export default function Layout({
         <main className="font-work-sans">
             <NavbarView />
             <ThemeToggle />
+            // FIXME: Add animations to theme toggle button
+            {/*https://skiper-ui.com/docs/components/theme-toggle-animations*/}
 
             {children}
 
