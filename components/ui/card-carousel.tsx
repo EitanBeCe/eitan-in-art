@@ -1,6 +1,6 @@
 "use client"
 
-import React from "react"
+import React, {useState} from "react"
 import Image from "next/image"
 import { Swiper, SwiperSlide } from "swiper/react"
 
@@ -75,6 +75,13 @@ export const CardCarousel: React.FC<CarouselProps> = ({
     background: none;
   }
   `
+
+    const [fullscreenImage, setFullscreenImage] = useState<string | null>(null);
+
+    const handleImageClick = (img: string) => {
+        setFullscreenImage(img);
+    };
+
     return (
         <section className="w-ace-y-4">
             <style>{css}</style>
@@ -122,7 +129,10 @@ export const CardCarousel: React.FC<CarouselProps> = ({
                             >
                                 {images.map((image, index) => (
                                     <SwiperSlide key={index}>
-                                        <div className="size-full rounded-3xl">
+                                        <div
+                                            className="size-full rounded-3xl"
+                                            onClick={() => handleImageClick(image.src)}
+                                        >
                                             <Image
                                                 src={image.src}
                                                 width={500}
@@ -151,6 +161,29 @@ export const CardCarousel: React.FC<CarouselProps> = ({
                     </div>
                 </div>
             </div>
+
+            {/* Fullscreen Modal */}
+            {fullscreenImage && (
+                <div
+                    className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center"
+                    onClick={() => setFullscreenImage(null)}
+                >
+                    <button
+                        className="absolute top-4 right-4 text-white text-xl p-2 hover:bg-white/10 rounded-full"
+                        onClick={() => setFullscreenImage(null)}
+                    >
+                        ✕
+                    </button>
+                    <Image
+                        src={fullscreenImage}
+                        alt="Fullscreen view"
+                        width={1920}
+                        height={1080}
+                        className="max-w-[95vw] max-h-[95vh] object-contain"
+                        quality={100}
+                    />
+                </div>
+            )}
         </section>
     )
 }

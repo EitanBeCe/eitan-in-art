@@ -9,7 +9,7 @@ type Props = {
     images: string[];
 };
 
-export default function ImageCarousel({ images }: Props) {
+export default function ImageCarouselView({ images }: Props) {
     const timer = useRef<NodeJS.Timeout | null>(null);
     const [currentSlide, setCurrentSlide] = useState(0);
     const [isMounted, setIsMounted] = useState(false);

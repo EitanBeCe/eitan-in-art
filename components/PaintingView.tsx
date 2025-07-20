@@ -19,8 +19,8 @@ export function PaintingView({ title, description, images, paint, size, price, c
             </div>
 
             {/* Content */}
-            {/*<div className="mx-auto max-sm:px-3 px-8 py-4 relative">*/}
             <div className="py-4 relative">
+            {/*<div className="mx-auto max-sm:px-3 px-8 py-4 relative">*/}
                 <h1 className="text-2xl md:text-3xl font-bold mb-4 text-center">{title}</h1>
 
                 {/*<ImageCarouselView images={images} />*/}
