@@ -1,7 +1,7 @@
 import React from "react";
 import NavbarView from "@/components/NavbarView";
-import {ThemeToggle} from "@/components/providers/ThemeToggleView";
 import FooterView from "@/components/FooterView";
+import {ThemeToggleButton} from "@/components/providers/theme-toggle-button";
 
 export default function Layout({
    children,
@@ -11,9 +11,9 @@ export default function Layout({
     return (
         <main className="font-work-sans">
             <NavbarView />
-            <ThemeToggle />
-            // FIXME: Add animations to theme toggle button
-            {/*https://skiper-ui.com/docs/components/theme-toggle-animations*/}
+            <div className="absolute top-2 right-2">
+                <ThemeToggleButton showLabel variant="circle-blur" start="top-right" />
+            </div>
 
             {children}
 
