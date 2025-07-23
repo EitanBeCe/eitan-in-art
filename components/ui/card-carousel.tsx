@@ -72,6 +72,25 @@ export const CardCarouselView: React.FC<CarouselProps> = ({
   .swiper-3d .swiper-slide-shadow-right{
     background: none;
   }
+  
+  /* Custom pagination styles */
+  .swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    background: rgba(255, 255, 255, 0.5) !important;
+    opacity: 1 !important;
+    transition: all 0.3s ease !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: white !important;
+    transform: scale(1) !important;
+  }
+
+  /* Dynamic bullets - making center bullet larger */
+  .swiper-pagination-bullet-active-main {
+    transform: scale(1) !important;
+  }
   `
 
     const [fullscreenImage, setFullscreenImage] = useState<string | null>(null);
@@ -119,7 +138,12 @@ export const CardCarouselView: React.FC<CarouselProps> = ({
                                     depth: 100,
                                     modifier: 2.5,
                                 }}
-                                pagination={showPagination}
+                                // pagination={showPagination}
+                                pagination={showPagination ? {
+                                    clickable: true,
+                                    dynamicBullets: true,
+                                    dynamicMainBullets: 3,
+                                } : false}
                                 navigation={
                                     showNavigation
                                         ? {

@@ -1,7 +1,6 @@
 import React from "react";
 import NavbarView from "@/components/NavbarView";
 import FooterView from "@/components/FooterView";
-import {ThemeToggleButton} from "@/components/providers/theme-toggle-button";
 
 export default function Layout({
    children,
@@ -9,14 +8,9 @@ export default function Layout({
     children: React.ReactNode;
 }>) {
     return (
-        <main className="font-work-sans">
+        <main className="dark font-work-sans text-foreground">
             <NavbarView />
-            <div className="absolute top-2 right-2">
-                <ThemeToggleButton showLabel variant="circle-blur" start="top-right" />
-            </div>
-
             {children}
-
             <FooterView />
         </main>
     );

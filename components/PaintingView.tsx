@@ -2,6 +2,7 @@ import { PaintingCodable } from "@/lib/paintings";
 import Image from "next/image";
 import {CardCarouselView} from "@/components/ui/card-carousel";
 import React from "react";
+import SocialsView from "@/components/SocialsView";
 
 export function PaintingView({ title, description, images, paint, size, price, colors, isSold, isPrintsAvailable, wasExhibited }: PaintingCodable) {
     return (
@@ -62,7 +63,7 @@ export function PaintingView({ title, description, images, paint, size, price, c
                     {/* Side Block - additional info */}
                     <div className="lg:w-80 shrink-0">
                         <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm sticky top-4">
-                            <h2 className="text-xl font-bold mb-4">Print Information</h2>
+                            <h2 className="text-xl font-bold mb-4">Prices & Shipping</h2>
 
                             {/* Print Prices */}
                             <div className="space-y-3 mb-6">
@@ -78,23 +79,35 @@ export function PaintingView({ title, description, images, paint, size, price, c
                             <div className="space-y-3 mb-6">
                                 <h3 className="font-semibold">Shipping:</h3>
                                 <div className="space-y-2">
-                                    <p>Israel: 2-3 business days</p>
+                                    <p>Israel: 2-7 business days</p>
                                     <p>Worldwide: 7-14 business days</p>
-                                    <p>Free shipping over ₪500</p>
+                                    {/*<p>Free shipping over ₪500</p>*/}
                                 </div>
                             </div>
 
                             {/* Production Time */}
-                            <div className="space-y-3">
+                            <div className="space-y-3 mb-6">
                                 <h3 className="font-semibold">Production Time:</h3>
                                 <div className="space-y-2">
-                                    <p>Ready to ship: 3-5 business days</p>
-                                    <p>Custom sizes: 5-7 business days</p>
+                                    <p>Print creation: 2-5 business days</p>
+                                    <p>Your custom painting creation: 1-20 business days</p>
                                 </div>
                             </div>
 
                             {/* Contacts */}
-                            КОНТАКТЫЫЫЫЫ
+                            <div className="-m-3 space-y-3 mt-8 p-6 bg-gradient-to-r from-purple-500/60 to-pink-500/60 rounded-xl border-2 border-purple-500/50 backdrop-blur-sm shadow-lg">
+                                <h3 className="text-xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400">
+                                    Ready to Order?
+                                </h3>
+                                <div className="space-y-4">
+                                    <p className="text-center font-medium">
+                                        To order a print or an original artwork, please contact me:
+                                    </p>
+                                    <div className="flex justify-center">
+                                        <SocialsView />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

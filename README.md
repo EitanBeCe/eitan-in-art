@@ -5,6 +5,7 @@ Eitan's Art Paintings Website
 // FIXME: Продумать 404 page not found?
 // FIXME: разные валюты?
 // FIXME: чек мобилу
+// Удалить keen?
 
 Мб сделать как игру где ты ходишь по галерее с картинами, Веб галлерея... 3js?
 
