@@ -96,7 +96,8 @@ export function PaintingView({ title, description, images, paint, size, price, c
 
                             {/* Contacts */}
                             <div className="-m-3 space-y-3 mt-8 p-6 bg-gradient-to-r from-purple-500/60 to-pink-500/60 rounded-xl border-2 border-purple-500/50 backdrop-blur-sm shadow-lg">
-                                <h3 className="text-xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400">
+                                {/*<h3 className="text-xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400">*/}
+                                <h3 className="text-xl font-bold text-center bg-clip-text text-transparent text-white">
                                     Ready to Order?
                                 </h3>
                                 <div className="space-y-4">
