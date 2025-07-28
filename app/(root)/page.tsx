@@ -3,21 +3,19 @@ import {PaintingCardRowView} from "@/components/PaintingCardRowView";
 
 export default function Home() {
     return (
-        <>
-            <section className="section_container">
-                <ul className="mt-7 card_grid">
-                    {paintings?.length > 0 ? (
-                        paintings.map((p: PaintingCodable) => (
-                            <PaintingCardRowView
-                                key={p.slug}
-                                {...p}
-                            />
-                        ))
-                    ) : (
-                        <p className="no-results">No artworks found</p>
-                    )}
-                </ul>
-            </section>
-        </>
+        <section className="section_container !py-0">
+            <ul className="card_grid">
+                {paintings?.length > 0 ? (
+                    paintings.map((p: PaintingCodable) => (
+                        <PaintingCardRowView
+                            key={p.slug}
+                            {...p}
+                        />
+                    ))
+                ) : (
+                    <p className="no-results">No artworks found</p>
+                )}
+            </ul>
+        </section>
     );
 }

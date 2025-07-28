@@ -9,7 +9,7 @@ export function PaintingCardRowView({ slug, title, description, images }: Painti
 ) {
     return (
         <a href={`/${slug}`} target="_blank">
-            <CardContainer className="inter-var">
+            <CardContainer className="inter-var" containerClassName="py-8 flex items-center justify-center">
                 {/*<CardBody className="bg-gray-50 relative group/card hover:shadow-[0_0_45px_0px] hover:shadow-purple-500 dark:hover:shadow-purple-500/80 dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border transition-shadow duration-200 ease-linear">*/}
                 <CardBody className="bg-gray-50 relative group/card hover:shadow-[0_0_45px_0px] hover:shadow-purple-500 dark:hover:shadow-purple-500/80 dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
                     <CardItem
