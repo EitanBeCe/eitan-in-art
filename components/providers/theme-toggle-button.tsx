@@ -84,10 +84,10 @@ export function ThemeToggleButton({
             {" "}
               variant = {variant}
           </span>
-                    <span className="hidden group-hover:block border rounded-full px-2 absolute -bottom-10">
-            {" "}
-                        start = {start}
-          </span>
+          {/*          <span className="hidden group-hover:block border rounded-full px-2 absolute -bottom-10">*/}
+          {/*  {" "}*/}
+          {/*              start = {start}*/}
+          {/*</span>*/}
                 </>
             )}
         </Button>

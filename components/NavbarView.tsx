@@ -1,21 +1,51 @@
-const NavbarView = async () => {
+import Link from "next/link";
+import Image from "next/image";
+import {ThemeToggleButton} from "@/components/providers/theme-toggle-button";
+import React from "react";
+
+interface NavbarViewProps {
+    hideThemeToggler?: boolean;
+}
+
+const NavbarView = async ({ hideThemeToggler = false }: NavbarViewProps
+) => {
     return (
-        <header className="px-5 py-3 shadow-sm bg-black/5 dark:bg-black/20 border-t border-gray-200 dark:border-gray-800">
-        {/*<header className="px-5 py-3">*/}
+        <header className="flex items-center justify-between gap-1 px-5 py-3 shadow-sm bg-black/5 dark:bg-black/20 border-b border-gray-200 dark:border-gray-800">
+            <Image
+                src="/eitanOnBlue.png"
+                alt="Eitan's portrait"
+                width={50}
+                height={50}
+                // className="rounded-full object-cover border-2 border-purple-500"
+                className="rounded-full object-cover aspect-square sm:mr-28"
+                priority
+            />
+
             <h1 className="max-sm:text-xl text-2xl text-center">
-                <a href="/" className="hover:text-gray-300 transition-colors">
+                <Link href="/" className="hover:text-gray-300 transition-colors">
                     Eitan's virtual Gallery and Shop
-                </a>
+                </Link>
             </h1>
 
-            <button>Delivery</button>
-            <button>Prints</button>
+            {/*<Link*/}
+            {/*    href="/info"*/}
+            {/*    className="inline-flex items-center px-4 py-2 bg-purple-500 hover:bg-purple-600 text-white text-sm font-medium rounded-md shadow-sm transition-colors duration-200 mt-2 mx-auto hover:shadow-lg active:scale-95 transform"*/}
+            {/*>*/}
+            {/*    Delivery and Prints info*/}
+            {/*</Link>*/}
 
-            {/*<nav className="flex justify-between items-center">*/}
-            {/*    <Link href="/public">*/}
-            {/*        <Image src="/logo.png" alt="logo" width={144} height={30} />*/}
-            {/*    </Link>*/}
-            {/*</nav>*/}
+            <div className="flex items-center gap-1">
+                <nav>
+                    <Link
+                        href="/info"
+                        className="inline-flex items-center px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white text-sm font-medium rounded-md shadow-sm transition-colors duration-200 hover:shadow-lg active:scale-95 transform"
+                    >
+                        Delivery and Prints info
+                    </Link>
+                </nav>
+
+                {!hideThemeToggler && <ThemeToggleButton variant="circle-blur" start="top-right" />}
+            </div>
         </header>
     );
 };

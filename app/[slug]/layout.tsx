@@ -8,10 +8,10 @@ export default function Layout({
     children: React.ReactNode;
 }>) {
     return (
-        <main className="dark font-work-sans text-foreground">
-            <NavbarView />
+        <section className="dark font-work-sans text-foreground">
+            <NavbarView hideThemeToggler />
             {children}
             <FooterView />
-        </main>
+        </section>
     );
 }
