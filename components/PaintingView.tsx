@@ -13,7 +13,7 @@ export function PaintingView({ title, description, images, paint, size, price, c
                     src={images[0]}
                     alt="background"
                     fill
-                    className="object-cover blur brightness-75"
+                    className="object-cover blur brightness-75" // scale-105 to hide white borders
                     // priority
                     quality={10}
                 />

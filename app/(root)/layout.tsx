@@ -11,16 +11,31 @@ export default function Layout({
 }>) {
     return (
         <main className="font-work-sans">
-            <ThemeProvider>
-                <NavbarView />
-                <div className="absolute top-2 right-2">
-                    <ThemeToggleButton showLabel variant="circle-blur" start="top-right" />
-                </div>
+                <ThemeProvider>
+                    {/*<div className="fixed inset-0">*/}
+                    {/*    <BackgroundGradientAnimation*/}
+                    {/*        containerClassName="fixed inset-0 opacity-95 z-[-1]"*/}
+                    {/*        className="opacity-50"*/}
+                    {/*        gradientBackgroundStart="rgba(0,0,0,0)"*/}
+                    {/*        gradientBackgroundEnd="rgba(0,0,0,0)"*/}
+                    {/*        size="100%"*/}
+                    {/*        blendingValue="screen"*/}
+                    {/*        interactive={false}*/}
+                    {/*        firstColor="108, 0, 162"*/}
+                    {/*        secondColor="221, 74, 255"*/}
+                    {/*        thirdColor="100, 220, 255"*/}
+                    {/*    />*/}
+                    {/*</div>*/}
 
-                {children}
+                    <NavbarView />
+                    <div className="absolute top-2 right-2">
+                        <ThemeToggleButton showLabel variant="circle-blur" start="top-right" />
+                    </div>
 
-                <FooterView />
-            </ThemeProvider>
+                    {children}
+
+                    <FooterView />
+                </ThemeProvider>
         </main>
     );
 }
