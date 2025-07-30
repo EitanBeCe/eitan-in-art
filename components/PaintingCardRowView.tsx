@@ -20,7 +20,9 @@ export function PaintingCardRowView({ slug, title, description, images }: Painti
                                 ? "hover:shadow-yellow-400"
                                 : slug.includes("blue")
                                     ? "hover:shadow-sky-400 "
-                                    : "hover:shadow-purple-500 dark:hover:shadow-purple-500/80",
+                                    : slug.includes("hillel")
+                                        ? "hover:shadow-sky-400 "
+                                            : "hover:shadow-purple-500 dark:hover:shadow-purple-500/80",
                     )}
                 >
                     <CardItem

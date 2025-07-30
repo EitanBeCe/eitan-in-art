@@ -4,7 +4,7 @@ import {CardCarouselView} from "@/components/ui/card-carousel";
 import React from "react";
 import DeliveryAndPrintsInfoView from "@/components/DeliveryAndPrintsInfoView";
 
-export function PaintingView({ title, description, images, paint, size, price, colors, isSold, isPrintsAvailable, wasExhibited, bgBrightness }: PaintingCodable) {
+export function PaintingView({ title, description, images, paint, size, price, colors, isSold, isPrintsAvailable, wasExhibited }: PaintingCodable) {
     return (
         <div className="relative min-h-screen">
             {/* Background */}
@@ -13,7 +13,7 @@ export function PaintingView({ title, description, images, paint, size, price, c
                     src={images[0]}
                     alt="background"
                     fill
-                    className={`object-cover blur scale-105 brightness-${bgBrightness} `}
+                    className={`object-cover blur scale-105 brightness-75 `}
                     // priority
                     quality={10}
                 />
