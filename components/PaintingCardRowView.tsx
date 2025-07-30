@@ -1,17 +1,28 @@
-"use client";
-
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import {PaintingCodable} from "@/lib/paintings";
 import Image from "next/image";
+import clsx from "clsx";
 
 export function PaintingCardRowView({ slug, title, description, images }: PaintingCodable
 ) {
     return (
         <a href={`/${slug}`} target="_blank">
             <CardContainer className="inter-var" containerClassName="py-8 flex items-center justify-center">
-                {/*<CardBody className="bg-gray-50 relative group/card hover:shadow-[0_0_45px_0px] hover:shadow-purple-500 dark:hover:shadow-purple-500/80 dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border transition-shadow duration-200 ease-linear">*/}
-                <CardBody className="bg-gray-50 relative group/card hover:shadow-[0_0_45px_0px] hover:shadow-purple-500 dark:hover:shadow-purple-500/80 dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+                {/*<CardBody className={`bg-gray-50 relative group/card hover:shadow-[0_0_45px_0px] hover:${shadowColor} dark:hover:${shadowColor}/80 dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border transition-shadow duration-200 ease-linear`}>*/}
+                <CardBody
+                    className={clsx(
+                        "bg-gray-50 relative group/card hover:shadow-[0_0_45px_0px]",
+                        "dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border transition-shadow duration-200 ease-linear",
+                        slug.includes("chai")
+                            ? "hover:shadow-red-500"
+                            : slug.includes("gold")
+                                ? "hover:shadow-yellow-400"
+                                : slug.includes("blue")
+                                    ? "hover:shadow-sky-400 "
+                                    : "hover:shadow-purple-500 dark:hover:shadow-purple-500/80",
+                    )}
+                >
                     <CardItem
                         translateZ="70"
                         className="text-xl font-bold text-neutral-600 dark:text-white truncate"
