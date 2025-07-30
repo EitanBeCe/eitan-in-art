@@ -2,10 +2,9 @@ import { PaintingCodable } from "@/lib/paintings";
 import Image from "next/image";
 import {CardCarouselView} from "@/components/ui/card-carousel";
 import React from "react";
-import SocialsView from "@/components/SocialsView";
 import DeliveryAndPrintsInfoView from "@/components/DeliveryAndPrintsInfoView";
 
-export function PaintingView({ title, description, images, paint, size, price, colors, isSold, isPrintsAvailable, wasExhibited }: PaintingCodable) {
+export function PaintingView({ title, description, images, paint, size, price, colors, isSold, isPrintsAvailable, wasExhibited, bgBrightness }: PaintingCodable) {
     return (
         <div className="relative min-h-screen">
             {/* Background */}
@@ -14,7 +13,7 @@ export function PaintingView({ title, description, images, paint, size, price, c
                     src={images[0]}
                     alt="background"
                     fill
-                    className="object-cover blur brightness-75 scale-105" // scale-105 to hide white borders
+                    className={`object-cover blur scale-105 brightness-${bgBrightness} `}
                     // priority
                     quality={10}
                 />
@@ -45,8 +44,8 @@ export function PaintingView({ title, description, images, paint, size, price, c
                             </div>
                             <div className="space-y-2">
                                 <p><span className="font-semibold">Price:</span> ₪{price.toLocaleString()}</p>
-                                <p><span className="font-semibold">Status:</span> {isSold ? "Sold" : "Available"}</p>
                                 <p><span className="font-semibold">Prints:</span> {isPrintsAvailable ? "Available" : "Original only"}</p>
+                                <p><span className="font-semibold">Original:</span> {isSold ? "Sold" : "Available"}</p>
                                 {wasExhibited && <p><span
                                     className="font-semibold">Exhibition:</span> {wasExhibited ? "Has been exhibited" : "Not exhibited"}
                                 </p>}

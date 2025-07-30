@@ -9,6 +9,7 @@ export interface PaintingCodable {
   isPrintsAvailable: boolean;
   wasExhibited: boolean;
   price: number;
+  bgBrightness: number;
   images: string[];
 }
 
@@ -49,10 +50,12 @@ Israel
     isPrintsAvailable: false,
     wasExhibited: true,
     price: 20000,
+    bgBrightness: 75,
     images: [
       '/amIsraelChai/amIsraelChai1.jpeg',
       '/amIsraelChai/amIsraelChai11.jpeg',
       '/amIsraelChai/amIsraelChai2.jpeg',
+      '/amIsraelChai/amIsraelChai12.jpeg',
       '/amIsraelChai/amIsraelChai3.jpeg',
       '/amIsraelChai/amIsraelChai4.jpeg',
       '/amIsraelChai/amIsraelChai5.jpeg',
@@ -61,6 +64,29 @@ Israel
       '/amIsraelChai/amIsraelChai8.jpeg',
       '/amIsraelChai/amIsraelChai9.jpeg',
       '/amIsraelChai/amIsraelChai10.jpeg',
+    ]
+  },
+  {
+    slug: "home-blessing-black-and-gold",
+    title: "Am Israel Chai. Israel Lives in 23 languages",
+    description: `Home Blessing in Hebrew with a modern twist. This piece combines traditional Hebrew calligraphy with graffiti art, creating a unique and vibrant atmosphere for your home.
+    
+Share your favorite colors, words, and desired size with me, and I’ll transform your space into a Masterpiece.
+
+Enrich your surroundings with blessings and elegance through modern art that blends traditional Hebrew calligraphy with graffiti. Neon shades and backlighting options are available for a unique effect.`,
+    paint: "Acrylic and Spray on Canvas",
+    size: "100x80",
+    colors: "⚫️ 🟡 ⚪️",
+    isSold: true,
+    isPrintsAvailable: true,
+    wasExhibited: false,
+    price: 3000,
+    bgBrightness: 50,
+    images: [
+        '/homeBlessingBlackGold/homeBlessingBlackGold3.jpeg',
+        '/homeBlessingBlackGold/homeBlessingBlackGold2.jpeg',
+        '/homeBlessingBlackGold/homeBlessingBlackGold1.jpeg',
+        '/homeBlessingBlackGold/homeBlessingBlackGold4.jpeg',
     ]
   },
 ]

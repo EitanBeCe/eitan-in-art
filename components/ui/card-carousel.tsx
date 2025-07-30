@@ -138,7 +138,6 @@ export const CardCarouselView: React.FC<CarouselProps> = ({
                                     depth: 100,
                                     modifier: 2.5,
                                 }}
-                                // pagination={showPagination}
                                 pagination={showPagination ? {
                                     clickable: true,
                                     dynamicBullets: true,
@@ -164,36 +163,38 @@ export const CardCarouselView: React.FC<CarouselProps> = ({
                                 {images.map((image, index) => (
                                     <SwiperSlide key={index}>
                                         <div
-                                            className="size-full rounded-3xl"
+                                            // className="size-full rounded-3xl"
+                                            className="aspect-[4/5] w-full rounded-3xl"
                                             onClick={() => handleImageClick(image.src)}
                                         >
                                             <Image
                                                 src={image.src}
                                                 width={500}
                                                 height={500}
-                                                className="size-full rounded-xl"
+                                                // className="size-full rounded-xl"
+                                                className="w-full h-full rounded-xl object-cover"
                                                 alt={image.alt}
                                                 priority={index === 0}
                                             />
                                         </div>
                                     </SwiperSlide>
                                 ))}
-                                {/*{images.map((image, index) => (*/}
-                                {/*    <SwiperSlide key={index}>*/}
-                                {/*        <div*/}
-                                {/*            className="size-full rounded-3xl"*/}
-                                {/*            onClick={() => handleImageClick(image.src)}*/}
-                                {/*        >*/}
-                                {/*            <Image*/}
-                                {/*                src={image.src}*/}
-                                {/*                width={200}*/}
-                                {/*                height={200}*/}
-                                {/*                className="size-full rounded-xl"*/}
-                                {/*                alt={image.alt}*/}
-                                {/*            />*/}
-                                {/*        </div>*/}
-                                {/*    </SwiperSlide>*/}
-                                {/*))}*/}
+                                {images.map((image, index) => (
+                                    <SwiperSlide key={index}>
+                                        <div
+                                            className="aspect-[4/5] w-full rounded-3xl"
+                                            onClick={() => handleImageClick(image.src)}
+                                        >
+                                            <Image
+                                                src={image.src}
+                                                width={200}
+                                                height={200}
+                                                className="w-full h-full rounded-xl object-cover"
+                                                alt={image.alt}
+                                            />
+                                        </div>
+                                    </SwiperSlide>
+                                ))}
                             </Swiper>
                         </div>
                     </div>

@@ -12,7 +12,7 @@ const NavbarView = async ({ hideThemeToggler = false }: NavbarViewProps
     return (
         <header className="flex items-center justify-between gap-1 px-5 py-3 shadow-sm bg-black/5 dark:bg-black/20 border-b border-gray-200 dark:border-gray-800">
             <Image
-                src="/eitanOnBlue.png"
+                src="/eitanOnPurple.png"
                 alt="Eitan's portrait"
                 width={50}
                 height={50}
@@ -38,7 +38,7 @@ const NavbarView = async ({ hideThemeToggler = false }: NavbarViewProps
                 <nav>
                     <Link
                         href="/info"
-                        className="inline-flex items-center px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white text-sm font-medium rounded-md shadow-sm transition-colors duration-200 hover:shadow-lg active:scale-95 transform"
+                        className="inline-flex items-center px-4 py-2 bg-purple-400 hover:bg-purple-500 dark:bg-purple-800 dark:hover:bg-purple-900 text-white text-sm font-medium rounded-md shadow-sm transition-colors duration-200 hover:shadow-lg active:scale-95 transform"
                     >
                         Delivery and Prints info
                     </Link>
