@@ -160,41 +160,57 @@ export const CardCarouselView: React.FC<CarouselProps> = ({
                                     }}
                                 }
                             >
-                                {images.map((image, index) => (
-                                    <SwiperSlide key={index}>
-                                        <div
-                                            // className="size-full rounded-3xl"
-                                            className="aspect-[4/5] w-full rounded-3xl"
-                                            onClick={() => handleImageClick(image.src)}
-                                        >
-                                            <Image
-                                                src={image.src}
-                                                width={500}
-                                                height={500}
-                                                // className="size-full rounded-xl"
-                                                className="w-full h-full rounded-xl object-cover"
-                                                alt={image.alt}
-                                                priority={index === 0}
-                                            />
-                                        </div>
-                                    </SwiperSlide>
-                                ))}
-                                {images.map((image, index) => (
-                                    <SwiperSlide key={index}>
-                                        <div
-                                            className="aspect-[4/5] w-full rounded-3xl"
-                                            onClick={() => handleImageClick(image.src)}
-                                        >
-                                            <Image
-                                                src={image.src}
-                                                width={200}
-                                                height={200}
-                                                className="w-full h-full rounded-xl object-cover"
-                                                alt={image.alt}
-                                            />
-                                        </div>
-                                    </SwiperSlide>
-                                ))}
+                                {images.length === 1 ? (
+                                    <div
+                                        className="aspect-[4/5] rounded-3xl h-[74vh] mx-auto -mb-8"
+                                        onClick={() => handleImageClick(images[0].src)}
+                                    >
+                                        <Image
+                                            src={images[0].src}
+                                            width={500}
+                                            height={500}
+                                            className="h-full rounded-xl object-cover"
+                                            alt={images[0].alt}
+                                            priority
+                                        />
+                                    </div>
+                                ) : (
+                                    <>
+                                        {images.map((image, index) => (
+                                            <SwiperSlide key={`hq-${index}`}>
+                                                <div
+                                                    className="aspect-[4/5] w-full rounded-3xl"
+                                                    onClick={() => handleImageClick(image.src)}
+                                                >
+                                                    <Image
+                                                        src={image.src}
+                                                        width={500}
+                                                        height={500}
+                                                        className="w-full h-full rounded-xl object-cover"
+                                                        alt={image.alt}
+                                                        priority={index === 0}
+                                                    />
+                                                </div>
+                                            </SwiperSlide>
+                                        ))}
+                                        {images.map((image, index) => (
+                                            <SwiperSlide key={`lq-${index}`}>
+                                                <div
+                                                    className="aspect-[4/5] w-full rounded-3xl"
+                                                    onClick={() => handleImageClick(image.src)}
+                                                >
+                                                    <Image
+                                                        src={image.src}
+                                                        width={200}
+                                                        height={200}
+                                                        className="w-full h-full rounded-xl object-cover"
+                                                        alt={image.alt}
+                                                    />
+                                                </div>
+                                            </SwiperSlide>
+                                        ))}
+                                    </>
+                                )}
                             </Swiper>
                         </div>
                     </div>

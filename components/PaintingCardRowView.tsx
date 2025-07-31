@@ -45,7 +45,7 @@ export function PaintingCardRowView({ slug, title, description, images }: Painti
                             src={images[0]}
                             height="1000"
                             width="1000"
-                            className="h-80 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                            className={`h-80 w-full object-cover rounded-xl group-hover/card:shadow-xl ${slug.includes("hillel") ? "object-bottom" : ""}`}
                             alt={title.slice(0, 16)}
                             priority
                         />
