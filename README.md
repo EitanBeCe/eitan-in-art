@@ -1,6 +1,6 @@
 Eitan's Art Paintings Website
 
-// ФУТЕР ИНСТА
+// Добавить видосы из инсты в PaintingView
 // Пихнуть Кругляш с мордой и градиентом
 // FIXME: Продумать 404 page not found?
 // FIXME: разные валюты?

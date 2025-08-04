@@ -14,15 +14,17 @@ export function PaintingCardRowView({ slug, title, description, images }: Painti
                     className={clsx(
                         "bg-gray-50 relative group/card hover:shadow-[0_0_45px_0px]",
                         "dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border transition-shadow duration-200 ease-linear",
-                        slug.includes("chai")
-                            ? "hover:shadow-red-500"
-                            : slug.includes("gold")
-                                ? "hover:shadow-yellow-400"
-                                : slug.includes("blue")
-                                    ? "hover:shadow-sky-400 "
-                                    : slug.includes("hillel")
-                                        ? "hover:shadow-sky-400 "
-                                            : "hover:shadow-purple-500 dark:hover:shadow-purple-500/80",
+                        slug.includes("chail")
+                            ? "hover:shadow-pink-400"
+                            :slug.includes("chai")
+                                ? "hover:shadow-red-500"
+                                : slug.includes("gold")
+                                    ? "hover:shadow-yellow-400"
+                                    : slug.includes("blue") || slug.includes("hillel")
+                                        ? "hover:shadow-sky-400"
+                                            : slug.includes("white")
+                                                ? "hover:shadow-white-100"
+                        : "hover:shadow-purple-500 dark:hover:shadow-purple-500/80",
                     )}
                 >
                     <CardItem
@@ -34,7 +36,7 @@ export function PaintingCardRowView({ slug, title, description, images }: Painti
 
                     <CardItem
                         as="p"
-                        translateZ="40"
+                        translateZ="60"
                         className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 truncate"
                     >
                         {description}

@@ -3,14 +3,21 @@ import Image from "next/image";
 import {CardCarouselView} from "@/components/ui/card-carousel";
 import React from "react";
 import DeliveryAndPrintsInfoView from "@/components/DeliveryAndPrintsInfoView";
+import InstagramVideoView from "@/components/InstagramVideoView";
 
-export function PaintingView({ title, description, images, paint, size, price, colors, isSold, isPrintsAvailable, wasExhibited }: PaintingCodable) {
+export function PaintingView({ slug, title, description, images, paint, size, price, colors, isSold, isPrintsAvailable, wasExhibited, videoUrl }: PaintingCodable) {
     return (
         <div className="relative min-h-screen">
             {/* Background */}
             <div className="fixed inset-0 -z-10">
                 <Image
-                    src={images[0]}
+                    src={
+                        slug.includes("business")
+                            ? images[5]
+                            : slug.includes("abstract")
+                                ? images[1]
+                        : images[0]
+                    }
                     alt="background"
                     fill
                     className={`object-cover blur scale-105 brightness-75 `}
@@ -60,9 +67,11 @@ export function PaintingView({ title, description, images, paint, size, price, c
                         )}
                     </div>
 
-                    <DeliveryAndPrintsInfoView />
+                    <DeliveryAndPrintsInfoView/>
                 </div>
             </div>
+
+            {videoUrl && <InstagramVideoView videoUrl={videoUrl}/>}
         </div>
     );
 }
