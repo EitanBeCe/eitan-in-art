@@ -463,6 +463,119 @@ Enrich your surroundings with blessings and elegance through modern art that ble
         ],
         videoUrl: "https://www.instagram.com/p/DAd9MPMsniS/"
     },
+    {
+        slug: "ketubah-cover",
+        title: "Ketubah Cover Example",
+        description: `Ketubah cover in English and Hebrew, blending traditional calligraphy with modern design elements. This piece showcases the elegance and joy of a wedding celebration, making it a perfect keepsake for couples.
+
+Share your favorite colors, words, and desired size with me, and I’ll transform your space into a Masterpiece.
+
+Enrich your surroundings with blessings and elegance through modern art that blends traditional Hebrew calligraphy with graffiti. Neon shades and backlighting options are available for a unique effect.`,
+        paint: "Acrylic and Spray on Canvas",
+        size: "Anything you want",
+        colors: "Anything you want",
+        isSold: true,
+        isPrintsAvailable: true,
+        wasExhibited: false,
+        price: "500-3000",
+        images: [
+            '/ketubah/ketubah1.jpeg',
+            '/ketubah/ketubah2.jpeg',
+        ],
+        videoUrl: "https://www.instagram.com/p/DCjyRNBMmWI/"
+    },
+    {
+        slug: "talit",
+        title: "Talit and Splash",
+        description: `Non calligraphy for variety. A unique piece that combines traditional Jewish prayer shawl (Talit) with a modern splash of colors. This artwork captures the essence of spirituality and contemporary art, making it a striking addition to any collection.
+        
+Share your favorite colors, words, and desired size with me, and I’ll transform your space into a Masterpiece.
+
+Enrich your surroundings with blessings and elegance through modern art that blends traditional Hebrew calligraphy with graffiti. Neon shades and backlighting options are available for a unique effect.`,
+        paint: "Acrylic and Spray on Paper",
+        size: "100x80",
+        colors: "⚪️ 🟡 🟣 🔵",
+        isSold: false,
+        isPrintsAvailable: true,
+        wasExhibited: false,
+        price: "1000",
+        images: [
+            '/talit/talit1.png',
+        ],
+        videoUrl: "https://www.instagram.com/p/DAVujr1so-7/"
+    },
+    {
+        slug: "alef",
+        title: "The Alef: Under the Lines",
+        description: `Dive into the depths of Hebrew letters with “The Alef: Under the Lines”. This piece explores the intricate beauty of the Hebrew letter Alef, blending traditional calligraphy with modern artistic expression. The vibrant colors and dynamic lines create a captivating visual experience that invites contemplation and appreciation.
+
+Share your favorite colors, words, and desired size with me, and I’ll transform your space into a Masterpiece.
+
+Enrich your surroundings with blessings and elegance through modern art that blends traditional Hebrew calligraphy with graffiti. Neon shades and backlighting options are available for a unique effect.`,
+        paint: "Acrylic and Spray on Canvas",
+        size: "60x60",
+        colors: "🟡 🟣 ⚫️",
+        isSold: false,
+        isPrintsAvailable: true,
+        wasExhibited: false,
+        price: 5000,
+        images: [
+            '/alef/alef1.jpeg',
+            '/alef/alef2.jpeg',
+        ],
+        videoUrl: "https://www.instagram.com/p/DIrUod4sJEx/"
+    },
+    {
+        slug: "savor",
+        title: "The Savor: Who Else Can Feel?",
+        description: `Who else can feel and savor if not me?
+
+כִּ֣י מִ֥י יֹאכַ֛ל וּמִ֥י יָח֖וּשׁ ח֥וּץ מִמֶּֽנִּי
+Ecclesiastes 2:25
+
+This piece is a meditation on presence —
+on the right to feel, to taste, to be.
+An assertion that experience is personal, untransferable.
+Who, if not me?
+
+Share your favorite colors, words, and desired size with me, and I’ll transform your space into a Masterpiece.
+
+Enrich your surroundings with blessings and elegance through modern art that blends traditional Hebrew calligraphy with graffiti. Neon shades and backlighting options are available for a unique effect.`,
+        paint: "Acrylic and Spray on Canvas",
+        size: "40x40",
+        colors: "🟣 🟢 🟡 ⚫️",
+        isSold: false,
+        isPrintsAvailable: true,
+        wasExhibited: false,
+        price: 6000,
+        images: [
+            '/savor/savor1.png',
+            '/savor/savor2.jpeg',
+            '/savor/savor3.jpeg',
+        ],
+        videoUrl: "https://www.instagram.com/p/DJe-m6lMEVi/"
+    },
+    {
+        slug: "jerusalem-colors",
+        title: "Jerusalem power . ירושלים של צבעים",
+        description: `Jerusalem, the city of gold, is now a city of colors. This piece captures the vibrant spirit of Jerusalem through a modern lens. The use of neon colors and dynamic lines creates a striking visual representation of the city’s energy and beauty.
+
+Share your favorite colors, words, and desired size with me, and I’ll transform your space into a Masterpiece.
+
+Enrich your surroundings with blessings and elegance through modern art that blends traditional Hebrew calligraphy with graffiti. Neon shades and backlighting options are available for a unique effect.`,
+        paint: "Acrylic and Spray on Canvas",
+        size: "100x80",
+        colors: "🟣 🟢 🟡 ⚫️",
+        isSold: false,
+        isPrintsAvailable: true,
+        wasExhibited: false,
+        price: 3000,
+        images: [
+            '/jlmColors/jlmColors1.jpeg',
+            '/jlmColors/jlmColors2.jpeg',
+        ],
+        videoUrl: "https://www.instagram.com/p/DLCgioMs8qQ/"
+    },
 ]
 
 export default paintings;
