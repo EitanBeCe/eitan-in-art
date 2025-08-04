@@ -8,7 +8,7 @@ export interface PaintingCodable {
   isSold: boolean;
   isPrintsAvailable: boolean;
   wasExhibited: boolean;
-  price: number;
+  price: number | string;
   images: string[];
   videoUrl?: string;
 }
@@ -63,7 +63,8 @@ Israel
       '/amIsraelChai/amIsraelChai8.jpeg',
       '/amIsraelChai/amIsraelChai9.jpeg',
       '/amIsraelChai/amIsraelChai10.jpeg',
-    ]
+    ],
+      videoUrl: "https://www.instagram.com/p/C977SDFsmKt/?img_index=1"
   },
   {
     slug: "home-blessing-black-and-gold",
@@ -162,7 +163,7 @@ Enrich your surroundings with blessings and elegance through modern art that ble
 
 Discover the mesmerizing blend of traditional Hebrew calligraphy and modern graffiti art, all in stunning fluorescent colors that bring warmth and blessing to your home.
 
-Fluorescent acril, spray and wine 🍷
+Fluorescent acryl, spray and wine 🍷
     
 Share your favorite colors, words, and desired size with me, and I’ll transform your space into a Masterpiece.
 
@@ -247,6 +248,7 @@ Enrich your surroundings with blessings and elegance through modern art that ble
         '/eshetChail/eshetChail2.jpeg',
         '/eshetChail/eshetChail7.jpeg',
         '/eshetChail/eshetChail4.jpeg',
+        '/eshetChail/eshetChail8.jpeg',
         '/eshetChail/eshetChail5.jpeg',
         '/eshetChail/eshetChail6.jpeg',
     ],
@@ -306,6 +308,160 @@ Enrich your surroundings with blessings and elegance through modern art that ble
             '/homeBlessingAbstractBlackWhite/homeBlessingAbstractBlackWhite7.jpeg',
         ],
         videoUrl: "https://www.instagram.com/p/C6eeULxMo5K/"
+    },
+    {
+        slug: "more-prints",
+        title: "Prints collection",
+        description: `Explore a collection of prints from my artworks. Each piece is available in various sizes and formats, allowing you to bring a touch of modern art and calligraphy into your home or office.
+        
+Ideal for anyone wishing to infuse their home with a touch of holiness, abstraction and modern art.
+
+Share your favorite colors, words, and desired size with me, and I’ll transform your space into a Masterpiece.
+
+Enrich your surroundings with blessings and elegance through modern art that blends traditional Hebrew calligraphy with graffiti. Neon shades and backlighting options are available for a unique effect.`,
+        paint: "Acrylic and Spray on Canvas",
+        size: "Anything you want",
+        colors: "Anything you want",
+        isSold: false,
+        isPrintsAvailable: true,
+        wasExhibited: true,
+        price: "200-1000",
+        images: [
+            '/morePrints/morePrints20.jpeg',
+            '/morePrints/morePrints1.jpeg',
+            '/morePrints/morePrints2.jpeg',
+            '/morePrints/morePrints21.jpeg',
+            '/morePrints/morePrints3.jpeg',
+            '/morePrints/morePrints4.jpeg',
+            '/morePrints/morePrints5.jpeg',
+            '/eshetChail/eshetChail8.jpeg',
+            '/morePrints/morePrints6.jpeg',
+            '/morePrints/morePrints7.jpeg',
+            '/morePrints/morePrints8.jpeg',
+            '/morePrints/morePrints9.jpeg',
+            '/morePrints/morePrints10.jpeg',
+            '/morePrints/morePrints11.jpeg',
+            '/morePrints/morePrints12.jpeg',
+            '/morePrints/morePrints13.jpeg',
+            '/morePrints/morePrints14.jpeg',
+            '/morePrints/morePrints15.jpeg',
+            '/morePrints/morePrints16.jpeg',
+            '/morePrints/morePrints17.jpeg',
+            '/morePrints/morePrints18.jpeg',
+            '/morePrints/morePrints19.jpeg',
+        ],
+    },
+    {
+        slug: "russian-example",
+        title: "Calligraphy Demo Examples",
+        description: `English, Hebrew and Russian calligraphy examples. You can order a custom calligraphy piece in any language, with your favorite words, colors and size.`,
+        paint: "Acrylic and Spray on Canvas",
+        size: "Anything you want",
+        colors: "Anything you want",
+        isSold: false,
+        isPrintsAvailable: true,
+        wasExhibited: false,
+        price: "200-1000",
+        images: [
+            '/russianExample/englishExample3.jpeg',
+            '/russianExample/russianExample1.jpeg',
+            '/russianExample/englishExample1.jpeg',
+            '/russianExample/hebrewExample1.jpeg',
+            '/russianExample/russianExample2.jpeg',
+            '/russianExample/englishExample2.jpeg',
+            '/russianExample/tableArt.jpeg',
+        ],
+        videoUrl: "https://www.instagram.com/p/DDKQ7HnsAuY/"
+    },
+    {
+        slug: "spring-lady",
+        title: "Spring Lady",
+        description: `Non calligraphy for variety. 
+Autumn in the Girl.
+Girl in the Autumn.
+Acryl pouring.`,
+        paint: "Acrylic and Spray on Canvas",
+        size: "40x40",
+        colors: "🟡 🟢 🟠 🩷",
+        isSold: false,
+        isPrintsAvailable: true,
+        wasExhibited: false,
+        price: "1800",
+        images: [
+            '/springLady/springLady1.jpeg',
+        ],
+        videoUrl: "https://www.instagram.com/p/C1ZVS4OMM_7/?img_index=3"
+    },
+    {
+        slug: "horse",
+        title: "The Horse. Untamed",
+        description: `Non calligraphy for variety. A bold interpretation of strength and freedom. This majestic gray horse, with its vibrant green mane, is a blend of raw power and surreal beauty. Standing at 100x80 cm, this piece brings an eye-catching contrast and energy to any space. 🐎💚
+
+If you’re looking for art that tells a story and evokes emotion, this unique work is now available for purchase! DM for more details or to make it yours. ✨`,
+        paint: "Acrylic and Spray on Canvas",
+        size: "100x80",
+        colors: "🐎 🟢 ⚪️ 🟠 ⚫️",
+        isSold: false,
+        isPrintsAvailable: true,
+        wasExhibited: false,
+        price: "5000",
+        images: [
+            '/horse/horse2.png',
+            '/horse/horse1.jpeg',
+        ],
+        videoUrl: "https://www.instagram.com/p/DANwK2AsVXk/"
+    },
+    {
+        slug: "mizmor-ledavid-pink",
+        title: "Mizmor Le-David",
+        description: `“Even though I walk through the valley of the shadow of death, I will fear no evil, for You are with me.”
+
+This is one of the most powerful lines in the entire Bible.
+
+My latest painting, inspired by Psalm 23, brings this verse to life. Measuring 100x100 cm, it features soft gradients of white, pink, and violet, with delicate pink letters that reflect the beauty and depth of this ancient text.
+
+A reminder of unwavering hope and peace, no matter what challenges we face.
+
+Share your favorite colors, words, and desired size with me, and I’ll transform your space into a Masterpiece.
+
+Enrich your surroundings with blessings and elegance through modern art that blends traditional Hebrew calligraphy with graffiti. Neon shades and backlighting options are available for a unique effect.`,
+        paint: "Acrylic and Spray on Canvas",
+        size: "100x100",
+        colors: "🩷 🟣 ⚪️",
+        isSold: false,
+        isPrintsAvailable: true,
+        wasExhibited: false,
+        price: 7000,
+        images: [
+            '/mizmorLedavidPink/mizmorLedavidPink2.jpeg',
+            '/mizmorLedavidPink/mizmorLedavidPink1.jpeg',
+            '/mizmorLedavidPink/mizmorLedavidPink3.jpeg',
+            '/mizmorLedavidPink/mizmorLedavidPink4.jpeg',
+            '/mizmorLedavidPink/mizmorLedavidPink5.jpeg',
+        ],
+        videoUrl: "https://www.instagram.com/p/DFLGySzshSV/"
+    },
+    {
+        slug: "wedding-invitation",
+        title: "Wedding Invitation Example",
+        description: `Wedding invitation in English and Hebrew, blending traditional calligraphy with modern design elements. This piece showcases the elegance and joy of a wedding celebration, making it a perfect keepsake for couples.
+
+Share your favorite colors, words, and desired size with me, and I’ll transform your space into a Masterpiece.
+
+Enrich your surroundings with blessings and elegance through modern art that blends traditional Hebrew calligraphy with graffiti. Neon shades and backlighting options are available for a unique effect.`,
+        paint: "Acrylic and Spray on Canvas",
+        size: "Anything you want",
+        colors: "Anything you want",
+        isSold: true,
+        isPrintsAvailable: true,
+        wasExhibited: false,
+        price: "1000-5000",
+        images: [
+            '/weddingInvitation/weddingInvitation2.jpeg',
+            '/weddingInvitation/weddingInvitation1.jpeg',
+            '/weddingInvitation/weddingInvitation3.jpeg',
+        ],
+        videoUrl: "https://www.instagram.com/p/DAd9MPMsniS/"
     },
 ]
 

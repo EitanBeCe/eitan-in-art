@@ -160,19 +160,24 @@ export const CardCarouselView: React.FC<CarouselProps> = ({
                                     }}
                                 }
                             >
-                                {images.length === 1 ? (
-                                    <div
-                                        className="aspect-[4/5] rounded-3xl h-[74vh] mx-auto -mb-8"
-                                        onClick={() => handleImageClick(images[0].src)}
-                                    >
-                                        <Image
-                                            src={images[0].src}
-                                            width={500}
-                                            height={500}
-                                            className="h-full rounded-xl object-cover"
-                                            alt={images[0].alt}
-                                            priority
-                                        />
+                                {images.length < 3 ? (
+                                    <div className="flex gap-4 justify-center">
+                                        {images.map((image, index) => (
+                                            <div
+                                                key={index}
+                                                className="aspect-[4/5] rounded-3xl h-[74vh] -mb-8"
+                                                onClick={() => handleImageClick(image.src)}
+                                            >
+                                                <Image
+                                                    src={image.src}
+                                                    width={500}
+                                                    height={500}
+                                                    className="w-full h-full rounded-xl object-cover"
+                                                    alt={image.alt}
+                                                    priority={index === 0}
+                                                />
+                                            </div>
+                                        ))}
                                     </div>
                                 ) : (
                                     <>
