@@ -1,5 +1,5 @@
 {
-  "name": "next-js-course",
+  "name": "eitan-in-art",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -15,12 +15,9 @@
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
-    "@tabler/icons-react": "^3.34.0",
     "@tailwindcss/typography": "^0.5.16",
     "class-variance-authority": "^0.7.1",
-    "keen-slider": "^6.8.6",
     "lucide-react": "^0.525.0",
-    "motion": "^12.23.6",
     "next": "15.3.3",
     "next-themes": "^0.4.6",
     "react": "^19.0.0",
@@ -39,7 +36,6 @@
     "clsx": "^2.1.1",
     "eslint": "^9",
     "eslint-config-next": "15.3.3",
-    "framer-motion": "^12.23.6",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"

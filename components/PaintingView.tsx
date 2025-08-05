@@ -20,7 +20,7 @@ export function PaintingView({ slug, title, description, images, paint, size, pr
                     }
                     alt="background"
                     fill
-                    className={`object-cover blur scale-105 brightness-75 `}
+                    className={`object-cover blur scale-105 brightness-[68%] bg-black`}
                     // priority
                     quality={10}
                 />
@@ -61,7 +61,7 @@ export function PaintingView({ slug, title, description, images, paint, size, pr
 
                         {/* Description */}
                         {description && (
-                            <p className="text-lg text-gray-700 dark:text-gray-300 whitespace-pre-wrap">
+                            <p className="text-lg text-gray-700 dark:text-white whitespace-pre-wrap">
                                 {description}
                             </p>
                         )}

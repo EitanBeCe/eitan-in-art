@@ -1,23 +1,26 @@
 Eitan's Art Paintings Website
 
+bg
+чек все страницы артов
+чек цены
 // Добавить видосы из инсты в PaintingView
-// Пихнуть Кругляш с мордой и градиентом
+шапку видос?
 // FIXME: Продумать 404 page not found?
 // FIXME: разные валюты?
-// FIXME: чек мобилу
-// Удалить keen?
-
-Мб сделать как игру где ты ходишь по галерее с картинами, Веб галлерея... 3js?
-
-На старте: JSON-файл + изображения в /public/images
-Когда разрастётся: перейти на CMS (Sanity — лучший вариант для художника)
 
 - Next.js
 - AceternityUI
 - shadcn
+- swiper
 - KeenSlider
 - ThemeProvider
+- Instagram embed
 
+
+
+
+
+---
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 

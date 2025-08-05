@@ -18,36 +18,37 @@ const DeliveryAndPrintsInfoView = ({ fullView = false }: DeliveryAndPrintsInfoVi
 
                 {/* Print Prices */}
                 <div className="space-y-3 mb-6">
-                    <h3 className="font-semibold">Print Prices:</h3>
+                    <h3 className="font-bold">Print Prices (approximately):</h3>
                     <div className="space-y-2">
-                        <p>Small (20x30cm) - ₪200</p>
-                        <p>Medium (30x40cm) - ₪350</p>
-                        <p>Large (50x70cm) - ₪600</p>
+                        <p>Small (30x20cm) - ₪300</p>
+                        <p>Medium (40x30cm) - ₪400</p>
+                        <p>Medium (70x50cm) - ₪700</p>
+                        <p>Large (100x80cm) - ₪900</p>
                     </div>
                 </div>
 
                 {/* Shipping */}
                 <div className="space-y-3 mb-6">
-                    <h3 className="font-semibold">Shipping:</h3>
+                    <h3 className="font-bold">Shipping:</h3>
                     <div className="space-y-2">
-                        <p>Israel: 2-7 business days</p>
-                        <p>Worldwide: 7-14 business days</p>
+                        <p>Israel: 2-20 business days</p>
+                        <p>Worldwide: 7-30 business days</p>
                     </div>
                 </div>
 
                 {/* Production Time */}
                 <div className="space-y-3 mb-6">
-                    <h3 className="font-semibold">Production Time:</h3>
+                    <h3 className="font-bold">Production Time:</h3>
                     <div className="space-y-2">
                         <p>Print creation: 2-5 business days</p>
-                        <p>Your custom painting creation: 1-20 business days</p>
+                        <p>Your custom painting creation: <span className="whitespace-nowrap">1‑20</span> business days</p>
                     </div>
                 </div>
 
                 {/* Contacts */}
-                <div className={`-my-3 space-y-3 sm:mt-6 p-6 bg-gradient-to-r from-purple-500/60 to-pink-500/60 rounded-xl 
+                <div className={`-my-3 space-y-3 p-6 bg-gradient-to-r from-purple-500/60 to-pink-500/60 rounded-xl 
                     border-2 border-purple-500/50 backdrop-blur-sm shadow-lg
-                    ${fullView ? 'col-span-full max-w-2xl mx-auto mt-0' : 'sm:mb-1'}`}>
+                    ${fullView ? 'col-span-full max-w-2xl mx-auto mt-0' : 'sm:mb-1 sm:mt-6'}`}>
                     <h3 className="text-xl font-bold text-center bg-clip-text text-transparent text-white">
                         Ready to Order?
                     </h3>

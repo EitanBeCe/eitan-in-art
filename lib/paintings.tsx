@@ -52,9 +52,9 @@ Israel
     price: 20000,
     images: [
       '/amIsraelChai/amIsraelChai1.jpeg',
+        '/amIsraelChai/amIsraelChai12.jpeg',
       '/amIsraelChai/amIsraelChai11.jpeg',
       '/amIsraelChai/amIsraelChai2.jpeg',
-      '/amIsraelChai/amIsraelChai12.jpeg',
       '/amIsraelChai/amIsraelChai3.jpeg',
       '/amIsraelChai/amIsraelChai4.jpeg',
       '/amIsraelChai/amIsraelChai5.jpeg',

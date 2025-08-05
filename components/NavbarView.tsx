@@ -19,7 +19,7 @@ const NavbarView = async ({ hideThemeToggler = false }: NavbarViewProps
                     width={50}
                     height={50}
                     // className="rounded-full object-cover border-2 border-purple-500"
-                    className="rounded-full object-cover aspect-square sm:mr-[14vw]"
+                    className="rounded-full object-cover aspect-square sm:mr-[13.6vw]"
                     priority
                 />
             </Link>
