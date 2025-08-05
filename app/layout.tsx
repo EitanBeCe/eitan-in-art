@@ -57,15 +57,15 @@ export const metadata: Metadata = {
     title: "Eitan in Art",
     description: "Enjoy the sofrut calligraphy and modern art",
     keywords: "art, artist, portfolio, modern art, calligraphy, calligraffity, paintings, sofrut, Eitan's portfolio, Eitan's art, Eitan's calligraphy",
-    authors: [{ name: "Eitan", url: "https://eitanportfolio.netlify.app" }], // FIXME: artelberg
+    authors: [{ name: "Eitan", url: "https://artelberg.netlify.app" }],
     openGraph: {
         title: "Eitan in Art",
         description: "Enjoy the sofrut calligraphy and modern art",
-        url: "https://eitanportfolio.netlify.app", // FIXME: artelberg
+        url: "https://artelberg.netlify.app",
         siteName: "Eitan in Art",
         images: [
             {
-                url: "https://eitanportfolio.netlify.app/og-image.png", // FIXME: when deployed. og-image.png is already in Public. Maybe upload new from the finished website. Size 1200x630. To check if it works: Facebook Debugger → developers.facebook.com/tools/debug. Twitter Card Validator → cards-dev.twitter.com/validator
+                url: "https://artelberg.netlify.app/og-image.png", // FIXME: when deployed. og-image.png is already in Public. Maybe upload new from the finished website. Size 1200x630. To check if it works: Facebook Debugger → developers.facebook.com/tools/debug. Twitter Card Validator → cards-dev.twitter.com/validator
                 width: 1200,
                 height: 630,
                 alt: "Eitan in Art",
