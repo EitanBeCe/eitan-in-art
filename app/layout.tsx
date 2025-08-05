@@ -54,6 +54,7 @@ const workSans = localFont({
 });
 
 export const metadata: Metadata = {
+    metadataBase: new URL('https://artelberg.netlify.app'),
     title: "Eitan in Art",
     description: "Enjoy the sofrut calligraphy and modern art",
     keywords: "art, artist, portfolio, modern art, calligraphy, calligraffity, paintings, sofrut, Eitan's portfolio, Eitan's art, Eitan's calligraphy",
