@@ -571,6 +571,7 @@ Enrich your surroundings with blessings and elegance through modern art that ble
         wasExhibited: false,
         price: 3000,
         images: [
+            '/jlmColors/jlmColors3.jpeg',
             '/jlmColors/jlmColors1.jpeg',
             '/jlmColors/jlmColors2.jpeg',
         ],

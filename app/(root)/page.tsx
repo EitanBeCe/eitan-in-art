@@ -3,7 +3,7 @@ import {PaintingCardRowView} from "@/components/PaintingCardRowView";
 
 export default function Home() {
     return (
-        <section className="section_container !py-0">
+        <section className="section_container !py-0 !pt-4">
             <ul className="card_grid">
                 {paintings?.length > 0 ? (
                     paintings.map((p: PaintingCodable) => (

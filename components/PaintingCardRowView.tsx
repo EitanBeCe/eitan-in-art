@@ -8,7 +8,7 @@ export function PaintingCardRowView({ slug, title, description, images }: Painti
 ) {
     return (
         <a href={`/${slug}`} target="_blank">
-            <CardContainer className="inter-var" containerClassName="pt-8 pb-0 flex items-center justify-center">
+            <CardContainer className="inter-var" containerClassName="pt-4 pb-0 flex items-center justify-center">
                 {/*<CardBody className={`bg-gray-50 relative group/card hover:shadow-[0_0_45px_0px] hover:${shadowColor} dark:hover:${shadowColor}/80 dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border transition-shadow duration-200 ease-linear`}>*/}
                 <CardBody
                     className={clsx(
