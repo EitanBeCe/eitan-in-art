@@ -26,9 +26,9 @@ const NavbarView = async ({ hideThemeToggler = false }: NavbarViewProps
 
             <h1 className="max-sm:text-xl text-2xl text-center">
                 <Link href="/" className="hover:text-gray-300 transition-colors">
-                    <span className="max-md:hidden">Eitan's virtual Gallery and Shop</span>
+                    <span className="max-md:hidden">Eitan&apos;s virtual Gallery and Shop</span>
                     <span className="md:hidden">
-                        Eitan's virtual<br />
+                        Eitan&apos;s virtual<br />
                         Gallery and Shop
                     </span>
                 </Link>

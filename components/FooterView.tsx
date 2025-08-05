@@ -8,7 +8,7 @@ const FooterView = () => {
             <div className="max-w-6xl mx-auto flex flex-col items-center gap-4">
                 <SocialsView />
                 <p className="text-sm text-gray-600 dark:text-gray-400">
-                    © {new Date().getFullYear()} Eitan's Gallery. All rights reserved.
+                    © {new Date().getFullYear()} Eitan&apos;s Gallery. All rights reserved.
                 </p>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
                     All artwork and website created by Eitan
