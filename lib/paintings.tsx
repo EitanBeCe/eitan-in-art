@@ -16,7 +16,7 @@ export interface PaintingCodable {
 const paintings: PaintingCodable[] = [
   {
     slug: "am-israel-chai",
-    title: "Am Israel Chai. Israel Lives in 23 languages",
+    title: "Am Israel Chai. 23 languages",
     description: `🔴 ⚪️ ⚫️ "Israel Lives: iron dome, art of pure lines"
 
 Israel
@@ -66,6 +66,36 @@ Israel
     ],
       videoUrl: "https://www.instagram.com/p/C977SDFsmKt/?img_index=1"
   },
+    {
+        slug: "mizmor-ledavid-pink",
+        title: "Mizmor Le-David",
+        description: `“Even though I walk through the valley of the shadow of death, I will fear no evil, for You are with me.”
+
+This is one of the most powerful lines in the entire Bible.
+
+My latest painting, inspired by Psalm 23, brings this verse to life. Measuring 100x100 cm, it features soft gradients of white, pink, and violet, with delicate pink letters that reflect the beauty and depth of this ancient text.
+
+A reminder of unwavering hope and peace, no matter what challenges we face.
+
+Share your favorite colors, words, and desired size with me, and I’ll transform your space into a Masterpiece.
+
+Enrich your surroundings with blessings and elegance through modern art that blends traditional Hebrew calligraphy with graffiti. Neon shades and backlighting options are available for a unique effect.`,
+        paint: "Acrylic and Spray on Canvas",
+        size: "100x100",
+        colors: "🩷 🟣 ⚪️",
+        isSold: false,
+        isPrintsAvailable: true,
+        wasExhibited: false,
+        price: 7000,
+        images: [
+            '/mizmorLedavidPink/mizmorLedavidPink2.jpeg',
+            '/mizmorLedavidPink/mizmorLedavidPink1.jpeg',
+            '/mizmorLedavidPink/mizmorLedavidPink3.jpeg',
+            '/mizmorLedavidPink/mizmorLedavidPink4.jpeg',
+            '/mizmorLedavidPink/mizmorLedavidPink5.jpeg',
+        ],
+        videoUrl: "https://www.instagram.com/p/DFLGySzshSV/"
+    },
   {
     slug: "home-blessing-black-and-gold",
     title: "Home Blessing Black and Gold",
@@ -113,6 +143,28 @@ Enrich your surroundings with blessings and elegance through modern art that ble
         '/homeBlessingBlackBlue/homeBlessingBlackBlue7.jpeg',
     ]
   },
+    {
+        slug: "jerusalem-colors",
+        title: "Jerusalem power . ירושלים של צבעים",
+        description: `Jerusalem, the city of gold, is now a city of colors. This piece captures the vibrant spirit of Jerusalem through a modern lens. The use of neon colors and dynamic lines creates a striking visual representation of the city’s energy and beauty.
+
+Share your favorite colors, words, and desired size with me, and I’ll transform your space into a Masterpiece.
+
+Enrich your surroundings with blessings and elegance through modern art that blends traditional Hebrew calligraphy with graffiti. Neon shades and backlighting options are available for a unique effect.`,
+        paint: "Acrylic and Spray on Canvas",
+        size: "100x80",
+        colors: "🟣 🟢 🟡 ⚫️",
+        isSold: false,
+        isPrintsAvailable: true,
+        wasExhibited: false,
+        price: 3000,
+        images: [
+            '/jlmColors/jlmColors3.jpeg',
+            '/jlmColors/jlmColors1.jpeg',
+            '/jlmColors/jlmColors2.jpeg',
+        ],
+        videoUrl: "https://www.instagram.com/p/DLCgioMs8qQ/"
+    },
   {
     slug: "home-blessing-gold",
     title: "Home Blessing Pure Gold",
@@ -137,6 +189,61 @@ Enrich your surroundings with blessings and elegance through modern art that ble
         '/homeBlessingGold/homeBlessingGold6.jpeg',
     ]
   },
+    {
+        slug: "wedding-invitation",
+        title: "Wedding Invitation Example",
+        description: `Wedding invitation in English and Hebrew, blending traditional calligraphy with modern design elements. This piece showcases the elegance and joy of a wedding celebration, making it a perfect keepsake for couples.
+
+Share your favorite colors, words, and desired size with me, and I’ll transform your space into a Masterpiece.
+
+Enrich your surroundings with blessings and elegance through modern art that blends traditional Hebrew calligraphy with graffiti. Neon shades and backlighting options are available for a unique effect.`,
+        paint: "Acrylic and Spray on Canvas",
+        size: "Anything you want",
+        colors: "Anything you want",
+        isSold: true,
+        isPrintsAvailable: true,
+        wasExhibited: false,
+        price: "1000-5000",
+        images: [
+            '/weddingInvitation/weddingInvitation2.jpeg',
+            '/weddingInvitation/weddingInvitation1.jpeg',
+            '/weddingInvitation/weddingInvitation3.jpeg',
+        ],
+        videoUrl: "https://www.instagram.com/p/DAd9MPMsniS/"
+    },
+    {
+        slug: "home-blessing-colorful",
+        title: "Home Blessing Colorful",
+        description: `Illuminate Your Home with Sacred Art
+
+Discover the mesmerizing blend of traditional Hebrew calligraphy and modern graffiti art, all in stunning fluorescent colors that bring warmth and blessing to your home.
+
+Fluorescent acryl, spray and wine 🍷
+    
+Share your favorite colors, words, and desired size with me, and I’ll transform your space into a Masterpiece.
+
+Enrich your surroundings with blessings and elegance through modern art that blends traditional Hebrew calligraphy with graffiti. Neon shades and backlighting options are available for a unique effect.`,
+        paint: "Acrylic and Spray on Canvas",
+        size: "80x80",
+        colors: "🟡 🔴 🟣 🔵 ⚫️",
+        isSold: false,
+        isPrintsAvailable: true,
+        wasExhibited: true,
+        price: 7000,
+        images: [
+            '/homeBlessingColorful/homeBlessingColorful8.jpeg',
+            '/homeBlessingColorful/homeBlessingColorful1.jpeg',
+            '/homeBlessingColorful/homeBlessingColorful2.jpeg',
+            '/homeBlessingColorful/homeBlessingColorful3.jpeg',
+            '/homeBlessingColorful/homeBlessingColorful4.jpeg',
+            '/homeBlessingColorful/homeBlessingColorful5.jpeg',
+            '/homeBlessingColorful/homeBlessingColorful6.jpeg',
+            '/homeBlessingColorful/homeBlessingColorful7.jpeg',
+            '/homeBlessingColorful/homeBlessingColorful9.jpeg',
+            '/homeBlessingColorful/homeBlessingColorful10.jpeg',
+            '/homeBlessingColorful/homeBlessingColorful11.jpeg',
+        ]
+    },
   {
     slug: "hillel-said",
     title: "Hillel often said",
@@ -154,39 +261,6 @@ Enrich your surroundings with blessings and elegance through modern art that ble
     price: 2000,
     images: [
         '/hillelSaid/hillelSaid1.jpeg'
-    ]
-  },
-  {
-    slug: "home-blessing-colorful",
-    title: "Home Blessing Colorful",
-    description: `Illuminate Your Home with Sacred Art
-
-Discover the mesmerizing blend of traditional Hebrew calligraphy and modern graffiti art, all in stunning fluorescent colors that bring warmth and blessing to your home.
-
-Fluorescent acryl, spray and wine 🍷
-    
-Share your favorite colors, words, and desired size with me, and I’ll transform your space into a Masterpiece.
-
-Enrich your surroundings with blessings and elegance through modern art that blends traditional Hebrew calligraphy with graffiti. Neon shades and backlighting options are available for a unique effect.`,
-    paint: "Acrylic and Spray on Canvas",
-    size: "80x80",
-    colors: "🟡 🔴 🟣 🔵 ⚫️",
-    isSold: false,
-    isPrintsAvailable: true,
-    wasExhibited: true,
-    price: 7000,
-    images: [
-        '/homeBlessingColorful/homeBlessingColorful8.jpeg',
-        '/homeBlessingColorful/homeBlessingColorful1.jpeg',
-        '/homeBlessingColorful/homeBlessingColorful2.jpeg',
-        '/homeBlessingColorful/homeBlessingColorful3.jpeg',
-        '/homeBlessingColorful/homeBlessingColorful4.jpeg',
-        '/homeBlessingColorful/homeBlessingColorful5.jpeg',
-        '/homeBlessingColorful/homeBlessingColorful6.jpeg',
-        '/homeBlessingColorful/homeBlessingColorful7.jpeg',
-        '/homeBlessingColorful/homeBlessingColorful9.jpeg',
-        '/homeBlessingColorful/homeBlessingColorful10.jpeg',
-        '/homeBlessingColorful/homeBlessingColorful11.jpeg',
     ]
   },
   {
@@ -310,6 +384,57 @@ Enrich your surroundings with blessings and elegance through modern art that ble
         videoUrl: "https://www.instagram.com/p/C6eeULxMo5K/"
     },
     {
+        slug: "alef",
+        title: "The Alef: Under the Lines",
+        description: `Dive into the depths of Hebrew letters with “The Alef: Under the Lines”. This piece explores the intricate beauty of the Hebrew letter Alef, blending traditional calligraphy with modern artistic expression. The vibrant colors and dynamic lines create a captivating visual experience that invites contemplation and appreciation.
+
+Share your favorite colors, words, and desired size with me, and I’ll transform your space into a Masterpiece.
+
+Enrich your surroundings with blessings and elegance through modern art that blends traditional Hebrew calligraphy with graffiti. Neon shades and backlighting options are available for a unique effect.`,
+        paint: "Acrylic and Spray on Canvas",
+        size: "60x60",
+        colors: "🟡 🟣 ⚫️",
+        isSold: false,
+        isPrintsAvailable: true,
+        wasExhibited: false,
+        price: 5000,
+        images: [
+            '/alef/alef1.jpeg',
+            '/alef/alef2.jpeg',
+        ],
+        videoUrl: "https://www.instagram.com/p/DIrUod4sJEx/"
+    },
+    {
+        slug: "savor",
+        title: "The Savor: Who Else Can Feel?",
+        description: `Who else can feel and savor if not me?
+
+כִּ֣י מִ֥י יֹאכַ֛ל וּמִ֥י יָח֖וּשׁ ח֥וּץ מִמֶּֽנִּי
+Ecclesiastes 2:25
+
+This piece is a meditation on presence —
+on the right to feel, to taste, to be.
+An assertion that experience is personal, untransferable.
+Who, if not me?
+
+Share your favorite colors, words, and desired size with me, and I’ll transform your space into a Masterpiece.
+
+Enrich your surroundings with blessings and elegance through modern art that blends traditional Hebrew calligraphy with graffiti. Neon shades and backlighting options are available for a unique effect.`,
+        paint: "Acrylic and Spray on Canvas",
+        size: "40x40",
+        colors: "🟣 🟢 🟡 ⚫️",
+        isSold: false,
+        isPrintsAvailable: true,
+        wasExhibited: false,
+        price: 6000,
+        images: [
+            '/savor/savor1.png',
+            '/savor/savor2.jpeg',
+            '/savor/savor3.jpeg',
+        ],
+        videoUrl: "https://www.instagram.com/p/DJe-m6lMEVi/"
+    },
+    {
         slug: "more-prints",
         title: "Prints collection",
         description: `Explore a collection of prints from my artworks. Each piece is available in various sizes and formats, allowing you to bring a touch of modern art and calligraphy into your home or office.
@@ -412,58 +537,6 @@ If you’re looking for art that tells a story and evokes emotion, this unique w
         videoUrl: "https://www.instagram.com/p/DANwK2AsVXk/"
     },
     {
-        slug: "mizmor-ledavid-pink",
-        title: "Mizmor Le-David",
-        description: `“Even though I walk through the valley of the shadow of death, I will fear no evil, for You are with me.”
-
-This is one of the most powerful lines in the entire Bible.
-
-My latest painting, inspired by Psalm 23, brings this verse to life. Measuring 100x100 cm, it features soft gradients of white, pink, and violet, with delicate pink letters that reflect the beauty and depth of this ancient text.
-
-A reminder of unwavering hope and peace, no matter what challenges we face.
-
-Share your favorite colors, words, and desired size with me, and I’ll transform your space into a Masterpiece.
-
-Enrich your surroundings with blessings and elegance through modern art that blends traditional Hebrew calligraphy with graffiti. Neon shades and backlighting options are available for a unique effect.`,
-        paint: "Acrylic and Spray on Canvas",
-        size: "100x100",
-        colors: "🩷 🟣 ⚪️",
-        isSold: false,
-        isPrintsAvailable: true,
-        wasExhibited: false,
-        price: 7000,
-        images: [
-            '/mizmorLedavidPink/mizmorLedavidPink2.jpeg',
-            '/mizmorLedavidPink/mizmorLedavidPink1.jpeg',
-            '/mizmorLedavidPink/mizmorLedavidPink3.jpeg',
-            '/mizmorLedavidPink/mizmorLedavidPink4.jpeg',
-            '/mizmorLedavidPink/mizmorLedavidPink5.jpeg',
-        ],
-        videoUrl: "https://www.instagram.com/p/DFLGySzshSV/"
-    },
-    {
-        slug: "wedding-invitation",
-        title: "Wedding Invitation Example",
-        description: `Wedding invitation in English and Hebrew, blending traditional calligraphy with modern design elements. This piece showcases the elegance and joy of a wedding celebration, making it a perfect keepsake for couples.
-
-Share your favorite colors, words, and desired size with me, and I’ll transform your space into a Masterpiece.
-
-Enrich your surroundings with blessings and elegance through modern art that blends traditional Hebrew calligraphy with graffiti. Neon shades and backlighting options are available for a unique effect.`,
-        paint: "Acrylic and Spray on Canvas",
-        size: "Anything you want",
-        colors: "Anything you want",
-        isSold: true,
-        isPrintsAvailable: true,
-        wasExhibited: false,
-        price: "1000-5000",
-        images: [
-            '/weddingInvitation/weddingInvitation2.jpeg',
-            '/weddingInvitation/weddingInvitation1.jpeg',
-            '/weddingInvitation/weddingInvitation3.jpeg',
-        ],
-        videoUrl: "https://www.instagram.com/p/DAd9MPMsniS/"
-    },
-    {
         slug: "ketubah-cover",
         title: "Ketubah Cover Example",
         description: `Ketubah cover in English and Hebrew, blending traditional calligraphy with modern design elements. This piece showcases the elegance and joy of a wedding celebration, making it a perfect keepsake for couples.
@@ -503,79 +576,6 @@ Enrich your surroundings with blessings and elegance through modern art that ble
             '/talit/talit1.png',
         ],
         videoUrl: "https://www.instagram.com/p/DAVujr1so-7/"
-    },
-    {
-        slug: "alef",
-        title: "The Alef: Under the Lines",
-        description: `Dive into the depths of Hebrew letters with “The Alef: Under the Lines”. This piece explores the intricate beauty of the Hebrew letter Alef, blending traditional calligraphy with modern artistic expression. The vibrant colors and dynamic lines create a captivating visual experience that invites contemplation and appreciation.
-
-Share your favorite colors, words, and desired size with me, and I’ll transform your space into a Masterpiece.
-
-Enrich your surroundings with blessings and elegance through modern art that blends traditional Hebrew calligraphy with graffiti. Neon shades and backlighting options are available for a unique effect.`,
-        paint: "Acrylic and Spray on Canvas",
-        size: "60x60",
-        colors: "🟡 🟣 ⚫️",
-        isSold: false,
-        isPrintsAvailable: true,
-        wasExhibited: false,
-        price: 5000,
-        images: [
-            '/alef/alef1.jpeg',
-            '/alef/alef2.jpeg',
-        ],
-        videoUrl: "https://www.instagram.com/p/DIrUod4sJEx/"
-    },
-    {
-        slug: "savor",
-        title: "The Savor: Who Else Can Feel?",
-        description: `Who else can feel and savor if not me?
-
-כִּ֣י מִ֥י יֹאכַ֛ל וּמִ֥י יָח֖וּשׁ ח֥וּץ מִמֶּֽנִּי
-Ecclesiastes 2:25
-
-This piece is a meditation on presence —
-on the right to feel, to taste, to be.
-An assertion that experience is personal, untransferable.
-Who, if not me?
-
-Share your favorite colors, words, and desired size with me, and I’ll transform your space into a Masterpiece.
-
-Enrich your surroundings with blessings and elegance through modern art that blends traditional Hebrew calligraphy with graffiti. Neon shades and backlighting options are available for a unique effect.`,
-        paint: "Acrylic and Spray on Canvas",
-        size: "40x40",
-        colors: "🟣 🟢 🟡 ⚫️",
-        isSold: false,
-        isPrintsAvailable: true,
-        wasExhibited: false,
-        price: 6000,
-        images: [
-            '/savor/savor1.png',
-            '/savor/savor2.jpeg',
-            '/savor/savor3.jpeg',
-        ],
-        videoUrl: "https://www.instagram.com/p/DJe-m6lMEVi/"
-    },
-    {
-        slug: "jerusalem-colors",
-        title: "Jerusalem power . ירושלים של צבעים",
-        description: `Jerusalem, the city of gold, is now a city of colors. This piece captures the vibrant spirit of Jerusalem through a modern lens. The use of neon colors and dynamic lines creates a striking visual representation of the city’s energy and beauty.
-
-Share your favorite colors, words, and desired size with me, and I’ll transform your space into a Masterpiece.
-
-Enrich your surroundings with blessings and elegance through modern art that blends traditional Hebrew calligraphy with graffiti. Neon shades and backlighting options are available for a unique effect.`,
-        paint: "Acrylic and Spray on Canvas",
-        size: "100x80",
-        colors: "🟣 🟢 🟡 ⚫️",
-        isSold: false,
-        isPrintsAvailable: true,
-        wasExhibited: false,
-        price: 3000,
-        images: [
-            '/jlmColors/jlmColors3.jpeg',
-            '/jlmColors/jlmColors1.jpeg',
-            '/jlmColors/jlmColors2.jpeg',
-        ],
-        videoUrl: "https://www.instagram.com/p/DLCgioMs8qQ/"
     },
 ]
 

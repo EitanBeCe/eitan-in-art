@@ -6,9 +6,9 @@ interface DeliveryAndPrintsInfoViewProps {
 
 const DeliveryAndPrintsInfoView = ({ fullView = false }: DeliveryAndPrintsInfoViewProps) => {
     return (
-        <div className={`${fullView ? 'w-full max-w-4xl mx-auto' : 'lg:w-80 shrink-0'}`}>
+        <div className={`${fullView ? 'w-full max-w-4xl mx-auto max-sm:-mt-4' : 'lg:w-80 shrink-0'}`}>
             <div
-                className={`bg-white/10 p-6 rounded-lg backdrop-blur-sm 
+                className={`bg-black-100/10 dark:bg-white/10 px-3 py-6 sm:p-6 rounded-lg backdrop-blur-sm 
                 ${fullView ? 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6' : 'sticky top-4'}`
             }>
 
@@ -45,7 +45,7 @@ const DeliveryAndPrintsInfoView = ({ fullView = false }: DeliveryAndPrintsInfoVi
                 </div>
 
                 {/* Contacts */}
-                <div className={`-m-3 space-y-3 mt-8 p-6 bg-gradient-to-r from-purple-500/60 to-pink-500/60 rounded-xl 
+                <div className={`-m-3 space-y-3 sm:mt-8 p-6 bg-gradient-to-r from-purple-500/60 to-pink-500/60 rounded-xl 
                     border-2 border-purple-500/50 backdrop-blur-sm shadow-lg
                     ${fullView ? 'col-span-full max-w-2xl mx-auto mt-0' : ''}`}>
                     <h3 className="text-xl font-bold text-center bg-clip-text text-transparent text-white">

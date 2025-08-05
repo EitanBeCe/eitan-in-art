@@ -8,12 +8,12 @@ export function PaintingCardRowView({ slug, title, description, images }: Painti
 ) {
     return (
         <a href={`/${slug}`} target="_blank">
-            <CardContainer className="inter-var" containerClassName="pt-4 pb-0 flex items-center justify-center">
+            <CardContainer className="inter-var" containerClassName="py-2 max-sm:pt-0 pb-0 flex items-center justify-center">
                 {/*<CardBody className={`bg-gray-50 relative group/card hover:shadow-[0_0_45px_0px] hover:${shadowColor} dark:hover:${shadowColor}/80 dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border transition-shadow duration-200 ease-linear`}>*/}
                 <CardBody
                     className={clsx(
-                        "bg-gray-50 relative group/card hover:shadow-[0_0_45px_0px]",
-                        "dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border transition-shadow duration-200 ease-linear",
+                        "bg-black/5 relative group/card hover:shadow-[0_0_45px_0px]",
+                        "dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[calc(100vw-2rem)] sm:w-[30rem] h-auto rounded-xl p-4 sm:p-6 border transition-shadow duration-200 ease-linear",
                         slug.includes("chail") || slug.includes("mizmor")
                             ? "hover:shadow-pink-400"
                             :slug.includes("chai")
@@ -31,7 +31,7 @@ export function PaintingCardRowView({ slug, title, description, images }: Painti
                 >
                     <CardItem
                         translateZ="70"
-                        className="text-xl font-bold text-neutral-600 dark:text-white truncate"
+                        className="text-xl max-sm:text-md font-bold text-neutral-600 dark:text-white truncate max-w-full"
                     >
                         {title}
                     </CardItem>
@@ -39,7 +39,7 @@ export function PaintingCardRowView({ slug, title, description, images }: Painti
                     <CardItem
                         as="p"
                         translateZ="60"
-                        className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 truncate"
+                        className="text-neutral-500 text-sm mt-2 dark:text-neutral-300 truncate  max-w-full"
                     >
                         {description}
                     </CardItem>
@@ -49,13 +49,14 @@ export function PaintingCardRowView({ slug, title, description, images }: Painti
                             src={images[0]}
                             height="1000"
                             width="1000"
-                            className={`h-80 w-full object-cover rounded-xl group-hover/card:shadow-xl ${slug.includes("hillel") ? "object-bottom" : ""}`}
+                            className={`h-80 max-sm:h-[64vw] w-full object-cover rounded-xl group-hover/card:shadow-xl ${slug.includes("hillel") ? "object-bottom" : ""}`}
                             alt={title.slice(0, 16)}
                             priority
                         />
                     </CardItem>
 
-                    <div className="flex justify-between items-center mt-10">
+                    {/*max-sm:hidden*/}
+                    <div className="flex justify-between items-center mt-4 sm:mt-10">
                         <CardItem
                             translateZ={40}
                             className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold ml-auto"
