@@ -4,13 +4,17 @@ import { notFound } from "next/navigation";
 import { Metadata } from 'next'
 
 interface PageProps {
-    params: Promise<{
+    // params: Promise<{
+    //     slug: string;
+    // }>;
+    params: {
         slug: string;
-    }>;
+    };
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-    const painting = paintings.find((p) => p.slug === params.slug);
+    const { slug } = await params;
+    const painting = paintings.find((p) => p.slug === slug);
 
     if (!painting) {
         return {

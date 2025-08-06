@@ -7,7 +7,8 @@ import clsx from "clsx";
 export function PaintingCardRowView({ slug, title, description, images }: PaintingCodable
 ) {
     return (
-        <a href={`/${slug}`} target="_blank">
+        // target="_blank"
+        <a href={`/${slug}`}>
             <CardContainer className="inter-var" containerClassName="py-2 max-sm:pt-0 pb-0 flex items-center justify-center">
                 {/*<CardBody className={`bg-gray-50 relative group/card hover:shadow-[0_0_45px_0px] hover:${shadowColor} dark:hover:${shadowColor}/80 dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border transition-shadow duration-200 ease-linear`}>*/}
                 <CardBody

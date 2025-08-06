@@ -141,7 +141,8 @@ Enrich your surroundings with blessings and elegance through modern art that ble
         '/homeBlessingBlackBlue/homeBlessingBlackBlue5.jpeg',
         '/homeBlessingBlackBlue/homeBlessingBlackBlue6.jpeg',
         '/homeBlessingBlackBlue/homeBlessingBlackBlue7.jpeg',
-    ]
+    ],
+      videoUrl: "https://www.instagram.com/p/DKcG1vTMQQP/"
   },
     {
         slug: "jerusalem-colors",
@@ -242,7 +243,8 @@ Enrich your surroundings with blessings and elegance through modern art that ble
             '/homeBlessingColorful/homeBlessingColorful9.jpeg',
             '/homeBlessingColorful/homeBlessingColorful10.jpeg',
             '/homeBlessingColorful/homeBlessingColorful11.jpeg',
-        ]
+        ],
+        videoUrl: "https://www.instagram.com/p/DC4yX2-MXgr/"
     },
   {
     slug: "hillel-said",
@@ -261,7 +263,8 @@ Enrich your surroundings with blessings and elegance through modern art that ble
     price: 2000,
     images: [
         '/hillelSaid/hillelSaid1.jpeg'
-    ]
+    ],
+      videoUrl: "https://www.instagram.com/reel/C1mxGkdMkPH/"
   },
   {
     slug: "business-blessing-gold-dollar",
@@ -475,6 +478,7 @@ Enrich your surroundings with blessings and elegance through modern art that ble
             '/morePrints/morePrints18.jpeg',
             '/morePrints/morePrints19.jpeg',
         ],
+        videoUrl: "https://www.instagram.com/p/C-TIHUzM6BJ/"
     },
     {
         slug: "russian-example",
