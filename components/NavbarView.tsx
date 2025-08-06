@@ -21,7 +21,7 @@ const NavbarView = async ({ isPaintingView = false }: NavbarViewProps
                     width={50}
                     height={50}
                     // className="rounded-full object-cover border-2 border-purple-500"
-                    className="rounded-full object-cover aspect-square max-sm:hidden"
+                    className={`rounded-full object-cover aspect-square ${isPaintingView && "max-sm:hidden"}`}
                     priority
                 />
             </Link>
