@@ -10,8 +10,7 @@ export default function NotFound() {
     return (
         <main className="font-work-sans">
             <ThemeProvider>
-                {/*-z-10*/}
-                <div className="fixed inset-0">
+                <div className="fixed inset-0 -z-10">
                     <BackgroundGradientAnimation
                         containerClassName="fixed inset-0 opacity-95 -z-10"
                         className="opacity-50"

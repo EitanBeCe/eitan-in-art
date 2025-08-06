@@ -9,7 +9,7 @@ export default function Layout({
 }>) {
     return (
         <section className="dark font-work-sans text-foreground">
-            <NavbarView hideThemeToggler />
+            <NavbarView isPaintingView />
             {children}
             <FooterView />
         </section>

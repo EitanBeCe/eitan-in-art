@@ -2,24 +2,26 @@ import Link from "next/link";
 import Image from "next/image";
 import {ThemeToggleButton} from "@/components/providers/theme-toggle-button";
 import React from "react";
-import { FaTruck } from "react-icons/fa";
+import {FaArrowLeft, FaTruck} from "react-icons/fa";
 
 interface NavbarViewProps {
-    hideThemeToggler?: boolean;
+    isPaintingView?: boolean;
 }
 
-const NavbarView = async ({ hideThemeToggler = false }: NavbarViewProps
+const NavbarView = async ({ isPaintingView = false }: NavbarViewProps
 ) => {
     return (
-        <header className="flex items-center justify-between gap-1 px-5 py-3 shadow-sm bg-black/5 dark:bg-black/20 border-b border-gray-200 dark:border-gray-800">
-            <Link href="/">
+        <header className={`flex items-center justify-between gap-1 px-5 py-3 bg-black/5`}>
+            <Link href="/" className="flex items-center gap-3 sm:mr-[12vw]">
+                {isPaintingView && (<FaArrowLeft className="opacity-70 sm:hidden" />)}
+
                 <Image
                     src="/eitanOnPurple.png"
                     alt="Eitan's portrait"
                     width={50}
                     height={50}
                     // className="rounded-full object-cover border-2 border-purple-500"
-                    className="rounded-full object-cover aspect-square sm:mr-[13.6vw]"
+                    className="rounded-full object-cover aspect-square max-sm:hidden"
                     priority
                 />
             </Link>
@@ -45,7 +47,7 @@ const NavbarView = async ({ hideThemeToggler = false }: NavbarViewProps
                     </Link>
                 </nav>
 
-                {!hideThemeToggler && <ThemeToggleButton variant="circle-blur" start="top-right" />}
+                {!isPaintingView && <ThemeToggleButton variant="circle-blur" start="top-right" />}
             </div>
         </header>
     );
