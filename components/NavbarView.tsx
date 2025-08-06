@@ -40,7 +40,7 @@ const NavbarView = async ({ isPaintingView = false }: NavbarViewProps
                 <nav>
                     <Link
                         href="/info"
-                        className="inline-flex items-center gap-2 p-1 sm:p-2 bg-purple-400 hover:bg-purple-500  text-white text-sm font-medium rounded-md shadow-sm transition-colors duration-200 hover:shadow-lg active:scale-95 transform"
+                        className={`inline-flex items-center gap-2 p-1 sm:p-2 ${isPaintingView && "p-2"} bg-purple-400 hover:bg-purple-500  text-white text-sm font-medium rounded-md shadow-sm transition-colors duration-200 hover:shadow-lg active:scale-95 transform`}
                     >
                         <FaTruck className="sm:text-lg text-black" />
                         <span className="max-sm:hidden text-black">Delivery and Prints info</span>
