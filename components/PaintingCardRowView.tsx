@@ -14,7 +14,7 @@ export function PaintingCardRowView({ slug, title, description, images }: Painti
                 <CardBody
                     className={clsx(
                         "bg-black/5 relative group/card hover:shadow-[0_0_45px_0px]",
-                        "dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[calc(100vw-2rem)] sm:w-[30rem] h-auto rounded-xl p-4 sm:p-6 border transition-shadow duration-200 ease-linear",
+                        "dark:bg-black/40 dark:border-white/[0.1] border-black/[0.1] w-[calc(100vw-2rem)] sm:w-[30rem] h-auto rounded-xl p-4 sm:p-6 border transition-shadow duration-200 ease-linear",
                         slug.includes("chail") || slug.includes("mizmor")
                             ? "hover:shadow-pink-400"
                             :slug.includes("chai")
