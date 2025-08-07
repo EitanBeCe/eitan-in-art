@@ -1,6 +1,6 @@
 Eitan's Art Paintings Website
 
-чек перформанс и лайтхаус
+лейзи из портфолио?
 чек все страницы артов
 чек цены
 шапку видос?
@@ -14,9 +14,6 @@ Eitan's Art Paintings Website
 - KeenSlider
 - ThemeProvider
 - Instagram embed
-
-
-
 
 
 ---
