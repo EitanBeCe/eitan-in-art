@@ -27,7 +27,7 @@ export const CardCarouselView: React.FC<CarouselProps> = ({
   images,
   autoplayDelay = 1500,
   showPagination = true,
-  showNavigation = true,
+  showNavigation = false,
 }) => {
     const css = `
   .swiper {
@@ -193,7 +193,7 @@ export const CardCarouselView: React.FC<CarouselProps> = ({
                                                         height={500}
                                                         className="w-full h-full rounded-xl object-cover"
                                                         alt={image.alt}
-                                                        priority={index === 0}
+                                                        priority={index === 0 || index === 1 || index === images.length - 1}
                                                     />
                                                 </div>
                                             </SwiperSlide>

@@ -21,7 +21,7 @@ export function PaintingView({ slug, title, description, images, paint, size, pr
                     alt="background"
                     fill
                     className={`object-cover blur scale-105 brightness-[68%] bg-black`}
-                    // priority
+                    priority
                     quality={10}
                 />
             </div>
@@ -30,13 +30,11 @@ export function PaintingView({ slug, title, description, images, paint, size, pr
             {/*<div className="mx-auto max-sm:px-3 px-8 py-4 relative">*/}
                 <h1 className="text-2xl px-2 md:text-3xl font-bold mb-5 text-center">{title}</h1>
 
-                {/*<ImageCarouselView images={images} />*/}
-
                 <CardCarouselView
-                    images={images.map((i) => ({ src: i, alt: title }))}
+                    images={images.map((i) => ({src: i, alt: title }))}
                     autoplayDelay={2000}
                     showPagination={true}
-                    showNavigation={true}
+                    // showNavigation={true}
                 />
 
                 {/*Content*/}

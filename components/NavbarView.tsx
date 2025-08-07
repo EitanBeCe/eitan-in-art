@@ -1,3 +1,6 @@
+"use client";
+
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import {ThemeToggleButton} from "@/components/providers/theme-toggle-button";
@@ -8,23 +11,44 @@ interface NavbarViewProps {
     isPaintingView?: boolean;
 }
 
-const NavbarView = async ({ isPaintingView = false }: NavbarViewProps
+const NavbarView = ({ isPaintingView = false }: NavbarViewProps
 ) => {
+    const router = useRouter();
+
     return (
         <header className={`flex items-center justify-between gap-1 px-5 py-3 bg-black/5`}>
-            <Link href="/" className="flex items-center gap-3 sm:mr-[12vw]">
-                {isPaintingView && (<FaArrowLeft className="opacity-70 sm:hidden" />)}
+            {isPaintingView ? (
+                <div
+                    onClick={() => router.back()}
+                    className="flex items-center gap-3 sm:mr-[12vw] cursor-pointer"
+                >
+                    {isPaintingView && (<FaArrowLeft className="opacity-70 sm:hidden" />)}
 
-                <Image
-                    src="/eitanOnPurple.png"
-                    alt="Eitan's portrait"
-                    width={50}
-                    height={50}
-                    // className="rounded-full object-cover border-2 border-purple-500"
-                    className={`rounded-full object-cover aspect-square ${isPaintingView && "max-sm:hidden"}`}
-                    priority
-                />
-            </Link>
+                    <Image
+                        src="/eitanOnPurple.png"
+                        alt="Eitan's portrait"
+                        width={50}
+                        height={50}
+                        // className="rounded-full object-cover border-2 border-purple-500"
+                        className={`rounded-full object-cover aspect-square ${isPaintingView && "max-sm:hidden"}`}
+                        priority
+                    />
+                </div>
+            ) : (
+                <Link href="/" className="flex items-center gap-3 sm:mr-[12vw]">
+                    {isPaintingView && (<FaArrowLeft className="opacity-70 sm:hidden" />)}
+
+                    <Image
+                        src="/eitanOnPurple.png"
+                        alt="Eitan's portrait"
+                        width={50}
+                        height={50}
+                        // className="rounded-full object-cover border-2 border-purple-500"
+                        className={`rounded-full object-cover aspect-square ${isPaintingView && "max-sm:hidden"}`}
+                        priority
+                    />
+                </Link>
+            )}
 
             <h1 className="max-sm:text-xl text-2xl text-center">
                 <Link href="/" className="hover:text-gray-300 transition-colors">
