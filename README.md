@@ -21,11 +21,9 @@ Deployed website: [artelberg.netlify.app](https://artelberg.netlify.app)
 ---
 
 // TODO
-- лейзи из портфолио?
-- чек все страницы артов
-- чек цены
-- шапку видос?
-- купть Домен?
+- Lazy from portfolio?
+- Hero video?
+- Buy .com?
 
 ---
 
