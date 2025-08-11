@@ -36,6 +36,25 @@ yarn-error.log*
 # vercel
 .vercel
 
+.idea/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# vscode settings
+.vscode/
+
+# local netlify folder
+.netlify/
+
+# log files
+*.log
+
+# macOS trash
+.Trashes
+
+# temporary files
+*.swp
+*.swo
+*.tmp
