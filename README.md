@@ -1,4 +1,4 @@
-![og-image](/og-image.png)
+![og-image](https://artelberg.netlify.app/og-image.png)
 
 # Eitan's Paintings Website 🎨✨
 
