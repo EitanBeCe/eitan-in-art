@@ -1,20 +1,31 @@
-Eitan's Art Paintings Website
+![og-image](/og-image.png)
 
-лейзи из портфолио?
-чек все страницы артов
-чек цены
-шапку видос?
-Визуал ридми
-купть Домен?
+# Eitan's Paintings Website 🎨✨
 
-- Next.js
-- AceternityUI
-- shadcn
-- swiper
-- KeenSlider
-- ThemeProvider
-- Instagram embed
+An online portfolio of modern artworks — from Hebrew calligraphy in graffiti style to abstract and figurative paintings.  
+The site showcases each piece with photos, videos, descriptions, dimensions, techniques, color palettes, and status (sold, prints available, exhibited).
 
+Deployed website: [artelberg.netlify.app](https://artelberg.netlify.app)
+
+---
+
+## 🚀 Technologies
+- **Next.js** — modern React framework with SSR/SSG
+- **AceternityUI** — elegant UI components
+- **shadcn** — customizable, accessible component library
+- **Swiper** — slider for galleries
+- **KeenSlider** — lightweight and fast slider
+- **ThemeProvider** — light/dark mode support
+- **Instagram embed** — embedding videos and posts from Instagram
+
+---
+
+// TODO
+- лейзи из портфолио?
+- чек все страницы артов
+- чек цены
+- шапку видос?
+- купть Домен?
 
 ---
 
@@ -48,9 +59,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

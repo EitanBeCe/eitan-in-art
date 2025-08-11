@@ -49,7 +49,7 @@ export function PaintingView({ slug, title, description, images, paint, size, pr
                             </div>
                             <div className="space-y-2">
                                 <p><span className="font-semibold">Price:</span> ₪{price.toLocaleString()}</p>
-                                <p><span className="font-semibold">Prints:</span> {isPrintsAvailable ? "Available" : "Original only"}</p>
+                                <p><span className="font-semibold">Prints:</span> {isPrintsAvailable ? "₪200-1000" : "Original only"}</p>
                                 <p><span className="font-semibold">Original:</span> {isSold ? "Sold" : "Available"}</p>
                                 {wasExhibited && <p><span
                                     className="font-semibold">Exhibition:</span> {wasExhibited ? "Has been exhibited" : "Not exhibited"}

@@ -18,21 +18,20 @@ const NavbarView = ({ isPaintingView = false }: NavbarViewProps
     return (
         <header className={`flex items-center justify-between gap-1 px-5 py-3 bg-black/5`}>
             {isPaintingView ? (
-                <div
-                    onClick={() => router.back()}
-                    className="flex items-center gap-3 sm:mr-[12vw] cursor-pointer"
-                >
-                    {isPaintingView && (<FaArrowLeft className="opacity-70 sm:hidden" />)}
+                <div className="flex items-center gap-3 sm:mr-[12vw] cursor-pointer">
+                    {isPaintingView && (<FaArrowLeft className="opacity-70 sm:hidden" onClick={() => router.back()} />)}
 
-                    <Image
-                        src="/eitanOnPurple.png"
-                        alt="Eitan's portrait"
-                        width={50}
-                        height={50}
-                        // className="rounded-full object-cover border-2 border-purple-500"
-                        className={`rounded-full object-cover aspect-square ${isPaintingView && "max-sm:hidden"}`}
-                        priority
-                    />
+                    <Link href="/" className={`${isPaintingView && "max-sm:hidden"}`}>
+                        <Image
+                            src="/eitanOnPurple.png"
+                            alt="Eitan's portrait"
+                            width={50}
+                            height={50}
+                            // className="rounded-full object-cover border-2 border-purple-500"
+                            className={`rounded-full object-cover aspect-square`}
+                            priority
+                        />
+                    </Link>
                 </div>
             ) : (
                 <Link href="/" className="flex items-center gap-3 sm:mr-[12vw]">

@@ -12,7 +12,7 @@ export default function Layout({
     return (
         <main className="font-work-sans">
             <ThemeProvider>
-                <div className="fixed inset-0 z-[-1]">
+                <div className="fixed inset-0 z-[-1] max-sm:hidden">
                     <BackgroundGradientAnimation
                         containerClassName="fixed inset-0 opacity-95 z-[-1]"
                         className="opacity-50"

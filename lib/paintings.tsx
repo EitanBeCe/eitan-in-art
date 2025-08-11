@@ -158,7 +158,7 @@ Enrich your surroundings with blessings and elegance through modern art that ble
         isSold: false,
         isPrintsAvailable: true,
         wasExhibited: false,
-        price: 3000,
+        price: 4000,
         images: [
             '/jlmColors/jlmColors3.jpeg',
             '/jlmColors/jlmColors1.jpeg',
@@ -178,15 +178,14 @@ Enrich your surroundings with blessings and elegance through modern art that ble
     size: "100x80",
     colors: "🟡 ⚪️ ⚫️",
     isSold: true,
-    isPrintsAvailable: true,
+    isPrintsAvailable: false,
     wasExhibited: false,
-    price: 3000,
+    price: 3600,
     images: [
         '/homeBlessingGold/homeBlessingGold5.jpeg',
         '/homeBlessingGold/homeBlessingGold1.jpeg',
         '/homeBlessingGold/homeBlessingGold2.jpeg',
         '/homeBlessingGold/homeBlessingGold3.jpeg',
-        '/homeBlessingGold/homeBlessingGold4.jpeg',
         '/homeBlessingGold/homeBlessingGold6.jpeg',
     ]
   },
@@ -298,9 +297,9 @@ Enrich your surroundings with blessings and elegance through modern art that ble
   {
     slug: "eshet-chail",
     title: "Eshet Chail, Woman of Valor",
-    description: `Celebrating True Ladies: ‘Eshet Chail (Woman of Valor)’ by King Solomon and my humble self. 🌸✨
+    description: `Celebrating True Ladies: ‘Eshet Chail (Woman of Valor)’ by King Solomon and my humble self.
 
-I poured my heart into this beauty and spent a few sleepless nights with her (took me more than 12 hours total) 😊💔 It’s vibrant, pink, and even has a splash of vodka for that extra sparkle.
+I poured my heart into this beauty and spent a few sleepless nights with her (took me more than 12 hours total). It’s vibrant, pink, and even has a splash of vodka for that extra sparkle.
 
 Here is some text from it (usually sing on Shabbat evening):
 

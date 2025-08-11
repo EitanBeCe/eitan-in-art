@@ -120,25 +120,25 @@ export const CardCarouselView: React.FC<CarouselProps> = ({
                 {/*<div className="relative mx-auto flex w-full flex-col rounded-[24px] border border-black/5 bg-neutral-800/5 p-2 shadow-sm md:items-start md:gap-8 md:rounded-b-[20px] md:rounded-t-[40px] md:p-2">*/}
                 <div className="relative mx-auto flex w-full flex-col md:items-start md:gap-8">
                     <div className="flex w-full items-center justify-center gap-4">
-                        <div className="w-full">
+                        <div className={`w-full ${images.length <= 2 && "max-sm:px-2"}`}>
                             <Swiper
-                                spaceBetween={50}
                                 autoplay={{
                                     delay: autoplayDelay,
                                     disableOnInteraction: false
                                 }}
-                                effect={"coverflow"}
+                                // effect={"coverflow"}
+                                effect={images.length > 2 ? "coverflow" : "cards"}
                                 grabCursor={true}
-                                centeredSlides={true}
-                                loop={true}
-                                slidesPerView={"auto"}
+                                centeredSlides={images.length > 2}
+                                loop={images.length > 1}
+                                // slidesPerView={"auto"}
                                 coverflowEffect={{
                                     rotate: 0,
                                     stretch: 0,
                                     depth: 100,
                                     modifier: 2.5,
                                 }}
-                                pagination={showPagination ? {
+                                pagination={showPagination && images.length > 2 ? {
                                     clickable: true,
                                     dynamicBullets: true,
                                     dynamicMainBullets: 3,
@@ -152,34 +152,44 @@ export const CardCarouselView: React.FC<CarouselProps> = ({
                                         : undefined
                                 }
                                 modules={[EffectCoverflow, Autoplay, Pagination, Navigation]}
-                                breakpoints={
-                                    {1024: {
+                                breakpoints={{
+                                    320: {
+                                        slidesPerView: 1.2,
+                                        spaceBetween: 10,
+                                    },
+                                    500: {
+                                        slidesPerView: "auto",
+                                        spaceBetween: 50,
+                                    },
+                                    1024: {
+                                        slidesPerView: "auto",
+                                        spaceBetween: 50,
                                         coverflowEffect: {
                                             modifier: 1.5
                                         }
-                                    }}
-                                }
+                                    }
+                                }}
                             >
-                                {images.length < 3 ? (
-                                    <div className="flex gap-4 justify-center">
-                                        {images.map((image, index) => (
-                                            <div
-                                                key={index}
-                                                className="aspect-[4/5] rounded-3xl h-[74vh] -mb-8"
-                                                onClick={() => handleImageClick(image.src)}
-                                            >
-                                                <Image
-                                                    src={image.src}
-                                                    width={500}
-                                                    height={500}
-                                                    className="w-full h-full rounded-xl object-cover"
-                                                    alt={image.alt}
-                                                    priority={index === 0}
-                                                />
-                                            </div>
-                                        ))}
-                                    </div>
-                                ) : (
+                                {/*{images.length < 3 ? (*/}
+                                {/*    <div className="flex gap-4 justify-center">*/}
+                                {/*        {images.map((image, index) => (*/}
+                                {/*            <div*/}
+                                {/*                key={index}*/}
+                                {/*                className="aspect-[4/5] rounded-3xl h-[74vh] -mb-8"*/}
+                                {/*                onClick={() => handleImageClick(image.src)}*/}
+                                {/*            >*/}
+                                {/*                <Image*/}
+                                {/*                    src={image.src}*/}
+                                {/*                    width={500}*/}
+                                {/*                    height={500}*/}
+                                {/*                    className="w-full h-full rounded-xl object-cover"*/}
+                                {/*                    alt={image.alt}*/}
+                                {/*                    priority={index === 0}*/}
+                                {/*                />*/}
+                                {/*            </div>*/}
+                                {/*        ))}*/}
+                                {/*    </div>*/}
+                                {/*) : (*/}
                                     <>
                                         {images.map((image, index) => (
                                             <SwiperSlide key={`hq-${index}`}>
@@ -215,7 +225,7 @@ export const CardCarouselView: React.FC<CarouselProps> = ({
                                             </SwiperSlide>
                                         ))}
                                     </>
-                                )}
+                                {/*)}*/}
                             </Swiper>
                         </div>
                     </div>
