@@ -4,8 +4,28 @@ import {CardCarouselView} from "@/components/ui/card-carousel";
 import React from "react";
 import DeliveryAndPrintsInfoView from "@/components/DeliveryAndPrintsInfoView";
 import InstagramVideoView from "@/components/InstagramVideoView";
+import Link from "next/link";
 
-export function PaintingView({ slug, title, description, images, paint, size, price, colors, isSold, isPrintsAvailable, wasExhibited, videoUrl }: PaintingCodable) {
+type NextPaintingShortCodable = { slug: string; title: string; image: string };
+
+export function PaintingView(
+    {
+        slug,
+        title,
+        description,
+        images,
+        paint,
+        size,
+        price,
+        colors,
+        isSold,
+        isPrintsAvailable,
+        wasExhibited,
+        videoUrl,
+        nextPainting,
+        prevPainting,
+    }: PaintingCodable & { nextPainting?: NextPaintingShortCodable } & { prevPainting?: NextPaintingShortCodable }
+) {
     return (
         <div className="relative min-h-screen">
             {/* Background */}
@@ -70,6 +90,45 @@ export function PaintingView({ slug, title, description, images, paint, size, pr
             </div>
 
             {videoUrl && <InstagramVideoView videoUrl={videoUrl}/>}
+
+            <div className="flex flex-row gap-1 px-4 pb-8 pt-4 max-w-7xl mx-auto justify-between">
+                {prevPainting && (
+                    <Link
+                        href={`/${prevPainting.slug}`}
+                        className="group flex-row items-center gap-3 px-2 pt-2 rounded-xl bg-black/70 text-white hover:bg-black/90 transition"
+                    >
+                        <div className="relative w-[40vw] h-[50vw] sm:w-[30vw] sm:h-[22vw] rounded-md overflow-hidden">
+                            <Image
+                                src={prevPainting.image}
+                                alt={prevPainting.title}
+                                fill
+                                className="object-cover group-hover:scale-105 transition"
+                            />
+                        </div>
+
+                        <span className="block font-medium py-1 text-center">← Previous</span>
+                    </Link>
+                )}
+
+                {nextPainting && (
+                    <Link
+                        href={`/${nextPainting.slug}`}
+                        className="group flex-row items-center gap-3 px-2 pt-2 rounded-xl bg-black/70 text-white hover:bg-black/90 transition"
+                    >
+                        <div className="relative w-[40vw] h-[50vw] sm:w-[30vw] sm:h-[22vw] rounded-md overflow-hidden">
+                            <Image
+                                src={nextPainting.image}
+                                alt={nextPainting.title}
+                                fill
+                                className="object-cover group-hover:scale-105 transition"
+                            />
+                        </div>
+
+                        <span className="block font-medium py-1 text-center">Next →</span>
+                    </Link>
+                )}
+            </div>
+
         </div>
     );
 }

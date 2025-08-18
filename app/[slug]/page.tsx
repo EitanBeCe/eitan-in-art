@@ -51,13 +51,21 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
 export default async function Page({ params }: PageProps) {
     const { slug } = await params;
-    const painting = paintings.find((p) => p.slug === slug);
+    // const painting = paintings.find((p) => p.slug === slug);
+    // if (!painting) {
+    //     notFound();
+    // }
 
-    if (!painting) {
+    const currentIndex = paintings.findIndex((p) => p.slug === slug);
+    if (currentIndex === -1) {
         notFound();
     }
 
-    return <PaintingView {...painting} />;
+    const painting = paintings[currentIndex];
+    const next = paintings[(currentIndex + 1) % paintings.length];
+    const prev = paintings[(currentIndex - 1) % paintings.length];
+
+    return <PaintingView {...painting} nextPainting={{ slug: next.slug, title: next.title, image: next.images[0] }} prevPainting={{ slug: prev.slug, title: prev.title, image: prev.images[0] }} />;
 }
 
 export async function generateStaticParams() {

@@ -21,6 +21,8 @@ Deployed website: [artelberg.netlify.app](https://artelberg.netlify.app)
 ---
 
 // TODO
+- Loaders
+- Videos to youtube
 - Lazy from portfolio?
 - Hero video?
 - Buy .com?
