@@ -62,10 +62,27 @@ export default async function Page({ params }: PageProps) {
     }
 
     const painting = paintings[currentIndex];
-    const next = paintings[(currentIndex + 1) % paintings.length];
-    const prev = paintings[(currentIndex - 1) % paintings.length];
+    const nextIndex = (currentIndex + 1) % paintings.length;
+    const prevIndex = currentIndex > 0 ? currentIndex - 1 : null;
 
-    return <PaintingView {...painting} nextPainting={{ slug: next.slug, title: next.title, image: next.images[0] }} prevPainting={{ slug: prev.slug, title: prev.title, image: prev.images[0] }} />;
+    const next = paintings[nextIndex];
+    const prev = prevIndex !== null ? paintings[prevIndex] : null;
+
+    return (
+        <PaintingView
+            {...painting}
+            nextPainting={{
+                slug: next.slug,
+                title: next.title,
+                image: next.images[0],
+            }}
+            prevPainting={
+                prev
+                    ? { slug: prev.slug, title: prev.title, image: prev.images[0] }
+                    : undefined
+            }
+        />
+    );
 }
 
 export async function generateStaticParams() {

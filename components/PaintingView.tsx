@@ -92,7 +92,7 @@ export function PaintingView(
             {videoUrl && <InstagramVideoView videoUrl={videoUrl}/>}
 
             <div className="flex flex-row gap-1 px-4 pb-8 pt-4 max-w-7xl mx-auto justify-between">
-                {prevPainting && (
+                {prevPainting ? (
                     <Link
                         href={`/${prevPainting.slug}`}
                         className="group flex-row items-center gap-3 px-2 pt-2 rounded-xl bg-black/70 text-white hover:bg-black/90 transition"
@@ -108,7 +108,7 @@ export function PaintingView(
 
                         <span className="block font-medium py-1 text-center">← Previous</span>
                     </Link>
-                )}
+                ) : <div className="w-auto" /> }
 
                 {nextPainting && (
                     <Link
