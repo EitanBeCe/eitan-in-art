@@ -26,9 +26,7 @@ Deployed website: [artelberg.netlify.app](https://artelberg.netlify.app)
 - Loaders
 - Золотую евину - одну нужно выровнять
 - Иерусалим - нужно пример с интерьером
-- Videos to youtube
 - Lazy from portfolio?
-- Hero video?
 -  .com?
 
 ---
