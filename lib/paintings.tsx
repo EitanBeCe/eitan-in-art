@@ -10,7 +10,8 @@ export interface PaintingCodable {
   wasExhibited: boolean;
   price: number | string;
   images: string[];
-  videoUrl?: string;
+  instaVideoUrl?: string;
+  ytVideoUrl?: string;
 }
 
 const paintings: PaintingCodable[] = [
@@ -64,7 +65,8 @@ Israel
       '/amIsraelChai/amIsraelChai9.jpeg',
       '/amIsraelChai/amIsraelChai10.jpeg',
     ],
-      videoUrl: "https://www.instagram.com/p/C977SDFsmKt/?img_index=1"
+      instaVideoUrl: "https://www.instagram.com/p/C977SDFsmKt/?img_index=1",
+      ytVideoUrl: "https://www.youtube.com/shorts/8jxYF23yJ-0"
   },
     {
         slug: "mizmor-ledavid-pink",
@@ -94,7 +96,8 @@ Enrich your surroundings with blessings and elegance through modern art that ble
             '/mizmorLedavidPink/mizmorLedavidPink4.jpeg',
             '/mizmorLedavidPink/mizmorLedavidPink5.jpeg',
         ],
-        videoUrl: "https://www.instagram.com/p/DFLGySzshSV/"
+        instaVideoUrl: "https://www.instagram.com/p/DFLGySzshSV/",
+        ytVideoUrl: "hhU-IlwCeWg"
     },
   {
     slug: "home-blessing-black-and-gold",
@@ -142,7 +145,8 @@ Enrich your surroundings with blessings and elegance through modern art that ble
         '/homeBlessingBlackBlue/homeBlessingBlackBlue6.jpeg',
         '/homeBlessingBlackBlue/homeBlessingBlackBlue7.jpeg',
     ],
-      videoUrl: "https://www.instagram.com/p/DKcG1vTMQQP/"
+      instaVideoUrl: "https://www.instagram.com/p/DKcG1vTMQQP/",
+      ytVideoUrl: "oBU12a86hrg"
   },
     {
         slug: "jerusalem-colors",
@@ -164,7 +168,8 @@ Enrich your surroundings with blessings and elegance through modern art that ble
             '/jlmColors/jlmColors1.jpeg',
             '/jlmColors/jlmColors2.jpeg',
         ],
-        videoUrl: "https://www.instagram.com/p/DLCgioMs8qQ/"
+        instaVideoUrl: "https://www.instagram.com/p/DLCgioMs8qQ/",
+        ytVideoUrl: "iCHlliKXBfM"
     },
   {
     slug: "home-blessing-gold",
@@ -209,7 +214,8 @@ Enrich your surroundings with blessings and elegance through modern art that ble
             '/weddingInvitation/weddingInvitation1.jpeg',
             '/weddingInvitation/weddingInvitation3.jpeg',
         ],
-        videoUrl: "https://www.instagram.com/p/DAd9MPMsniS/"
+        instaVideoUrl: "https://www.instagram.com/p/DAd9MPMsniS/",
+        ytVideoUrl: "ZLoRO01ic3A"
     },
     {
         slug: "home-blessing-colorful",
@@ -243,7 +249,7 @@ Enrich your surroundings with blessings and elegance through modern art that ble
             '/homeBlessingColorful/homeBlessingColorful10.jpeg',
             '/homeBlessingColorful/homeBlessingColorful11.jpeg',
         ],
-        videoUrl: "https://www.instagram.com/p/DC4yX2-MXgr/"
+        instaVideoUrl: "https://www.instagram.com/p/DC4yX2-MXgr/"
     },
   {
     slug: "hillel-said",
@@ -263,7 +269,7 @@ Enrich your surroundings with blessings and elegance through modern art that ble
     images: [
         '/hillelSaid/hillelSaid1.jpeg'
     ],
-      videoUrl: "https://www.instagram.com/reel/C1mxGkdMkPH/"
+      instaVideoUrl: "https://www.instagram.com/reel/C1mxGkdMkPH/"
   },
   {
     slug: "business-blessing-gold-dollar",
@@ -291,8 +297,8 @@ Enrich your surroundings with blessings and elegance through modern art that ble
         '/businessBlessingDollar/businessBlessingDollar5.jpeg',
         '/businessBlessingDollar/businessBlessingDollar7.jpeg',
     ],
-      videoUrl: "https://www.instagram.com/p/C4flM3VM-u-/"
-      // videoUrl: "https://www.instagram.com/reel/C4flM3VM-u-/"
+      instaVideoUrl: "https://www.instagram.com/p/C4flM3VM-u-/",
+      ytVideoUrl: "M25KPEas1eE"
   },
   {
     slug: "eshet-chail",
@@ -328,7 +334,8 @@ Enrich your surroundings with blessings and elegance through modern art that ble
         '/eshetChail/eshetChail5.jpeg',
         '/eshetChail/eshetChail6.jpeg',
     ],
-      videoUrl: "https://www.instagram.com/p/C74T5fSNskp/"
+      instaVideoUrl: "https://www.instagram.com/p/C74T5fSNskp/",
+        ytVideoUrl: "tyF5i0mJK4s"
   },
     {
         slug: "abstract-black-white",
@@ -355,7 +362,8 @@ Enrich your surroundings with blessings and elegance through modern art that ble
             '/abstractBlackWhite/abstractBlackWhite3.jpeg',
             '/abstractBlackWhite/abstractBlackWhite4.jpeg',
         ],
-        videoUrl: "https://www.instagram.com/p/C6B2Yqqsj2g/"
+        instaVideoUrl: "https://www.instagram.com/p/C6B2Yqqsj2g/",
+        ytVideoUrl: "AvaOrNJD-io"
     },
     {
         slug: "home-blessing-black-white",
@@ -383,7 +391,8 @@ Enrich your surroundings with blessings and elegance through modern art that ble
             '/homeBlessingAbstractBlackWhite/homeBlessingAbstractBlackWhite6.jpeg',
             '/homeBlessingAbstractBlackWhite/homeBlessingAbstractBlackWhite7.jpeg',
         ],
-        videoUrl: "https://www.instagram.com/p/C6eeULxMo5K/"
+        instaVideoUrl: "https://www.instagram.com/p/C6eeULxMo5K/",
+        ytVideoUrl: "OidoL-t4lqA"
     },
     {
         slug: "alef",
@@ -404,7 +413,7 @@ Enrich your surroundings with blessings and elegance through modern art that ble
             '/alef/alef1.jpeg',
             '/alef/alef2.jpeg',
         ],
-        videoUrl: "https://www.instagram.com/p/DIrUod4sJEx/"
+        instaVideoUrl: "https://www.instagram.com/p/DIrUod4sJEx/"
     },
     {
         slug: "savor",
@@ -434,7 +443,8 @@ Enrich your surroundings with blessings and elegance through modern art that ble
             '/savor/savor2.jpeg',
             '/savor/savor3.jpeg',
         ],
-        videoUrl: "https://www.instagram.com/p/DJe-m6lMEVi/"
+        instaVideoUrl: "https://www.instagram.com/p/DJe-m6lMEVi/",
+        ytVideoUrl: "qZHjZNVGFB4"
     },
     {
         slug: "more-prints",
@@ -477,7 +487,9 @@ Enrich your surroundings with blessings and elegance through modern art that ble
             '/morePrints/morePrints18.jpeg',
             '/morePrints/morePrints19.jpeg',
         ],
-        videoUrl: "https://www.instagram.com/p/C-TIHUzM6BJ/"
+        instaVideoUrl: "https://www.instagram.com/p/C-TIHUzM6BJ/",
+        ytVideoUrl: "TPiqENVmFeI"
+        // tyF5i0mJK4s
     },
     {
         slug: "russian-example",
@@ -499,7 +511,7 @@ Enrich your surroundings with blessings and elegance through modern art that ble
             '/russianExample/englishExample2.jpeg',
             '/russianExample/tableArt.jpeg',
         ],
-        videoUrl: "https://www.instagram.com/p/DDKQ7HnsAuY/"
+        instaVideoUrl: "https://www.instagram.com/p/DDKQ7HnsAuY/"
     },
     {
         slug: "spring-lady",
@@ -518,7 +530,7 @@ Acryl pouring.`,
         images: [
             '/springLady/springLady1.jpeg',
         ],
-        videoUrl: "https://www.instagram.com/p/C1ZVS4OMM_7/?img_index=3"
+        instaVideoUrl: "https://www.instagram.com/p/C1ZVS4OMM_7/?img_index=3"
     },
     {
         slug: "horse",
@@ -537,7 +549,9 @@ If you’re looking for art that tells a story and evokes emotion, this unique w
             '/horse/horse2.png',
             '/horse/horse1.jpeg',
         ],
-        videoUrl: "https://www.instagram.com/p/DANwK2AsVXk/"
+        instaVideoUrl: "https://www.instagram.com/p/DANwK2AsVXk/",
+        ytVideoUrl: "f61q25XpjPM"
+        // f61q25XpjPM
     },
     {
         slug: "ketubah-cover",
@@ -558,7 +572,8 @@ Enrich your surroundings with blessings and elegance through modern art that ble
             '/ketubah/ketubah1.jpeg',
             '/ketubah/ketubah2.jpeg',
         ],
-        videoUrl: "https://www.instagram.com/p/DCjyRNBMmWI/"
+        instaVideoUrl: "https://www.instagram.com/p/DCjyRNBMmWI/",
+        ytVideoUrl: "PyOeWYCKT-I"
     },
     {
         slug: "talit",
@@ -578,7 +593,7 @@ Enrich your surroundings with blessings and elegance through modern art that ble
         images: [
             '/talit/talit1.png',
         ],
-        videoUrl: "https://www.instagram.com/p/DAVujr1so-7/"
+        instaVideoUrl: "https://www.instagram.com/p/DAVujr1so-7/"
     },
 ]
 

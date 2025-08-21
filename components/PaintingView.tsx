@@ -5,6 +5,7 @@ import React from "react";
 import DeliveryAndPrintsInfoView from "@/components/DeliveryAndPrintsInfoView";
 import InstagramVideoView from "@/components/InstagramVideoView";
 import Link from "next/link";
+import YoutubeEmbedView from "@/components/YoutubeEmbedView";
 
 type NextPaintingShortCodable = { slug: string; title: string; image: string };
 
@@ -21,7 +22,8 @@ export function PaintingView(
         isSold,
         isPrintsAvailable,
         wasExhibited,
-        videoUrl,
+        instaVideoUrl,
+        ytVideoUrl,
         nextPainting,
         prevPainting,
     }: PaintingCodable & { nextPainting?: NextPaintingShortCodable } & { prevPainting?: NextPaintingShortCodable }
@@ -89,7 +91,9 @@ export function PaintingView(
                 </div>
             </div>
 
-            {videoUrl && <InstagramVideoView videoUrl={videoUrl}/>}
+            {/* Videos */}
+            {instaVideoUrl && !ytVideoUrl && <InstagramVideoView videoUrl={instaVideoUrl} />}
+            {ytVideoUrl && <YoutubeEmbedView videoId={ytVideoUrl} className="h-[89vh] w-[50vh] mb-8 max-w-7xl mx-auto" />}
 
             <div className="flex flex-row gap-1 px-4 pb-8 pt-4 max-w-7xl mx-auto justify-between">
                 {prevPainting ? (

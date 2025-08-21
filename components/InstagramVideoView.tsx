@@ -1,12 +1,23 @@
 'use client';
 
 import Script from 'next/script'
+import { useEffect } from 'react'
 
 interface InstagramVideoViewProps {
     videoUrl: string
 }
 
 export default function InstagramVideoView({ videoUrl }: InstagramVideoViewProps) {
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            if (typeof window !== 'undefined' && (window as any).instgrm) {
+                (window as any).instgrm.Embeds.process()
+            }
+        }, 100)
+
+        return () => clearTimeout(timer)
+    }, [videoUrl])
+
     return (
         <main className="flex flex-col items-center justify-center pb-4">
             {/* Instagram Embed Block */}
@@ -26,13 +37,10 @@ export default function InstagramVideoView({ videoUrl }: InstagramVideoViewProps
 
             {/* Instagram Embed Script */}
             <Script
+                key="instagram-script"
                 async
                 src="//www.instagram.com/embed.js"
-                onLoad={() => {
-                    if ((window as any).instgrm) {
-                        (window as any).instgrm.Embeds.process()
-                    }
-                }}
+                strategy="lazyOnload"
             />
         </main>
 

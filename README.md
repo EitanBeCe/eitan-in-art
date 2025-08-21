@@ -16,16 +16,20 @@ Deployed website: [artelberg.netlify.app](https://artelberg.netlify.app)
 - **Swiper** — slider for galleries
 - **KeenSlider** — lightweight and fast slider
 - **ThemeProvider** — light/dark mode support
+- **YouTube embed** — embedding videos from YouTube
 - **Instagram embed** — embedding videos and posts from Instagram
 
 ---
 
 // TODO
+- https://youtube.com/shorts/aDhUUyaRN00 на основную
 - Loaders
+- Золотую евину - одну нужно выровнять
+- Иерусалим - нужно пример с интерьером
 - Videos to youtube
 - Lazy from portfolio?
 - Hero video?
-- Buy .com?
+-  .com?
 
 ---
 
