@@ -93,7 +93,7 @@ export function PaintingView(
 
             {/* Videos */}
             {instaVideoUrl && !ytVideoUrl && <InstagramVideoView videoUrl={instaVideoUrl} />}
-            {ytVideoUrl && <YoutubeEmbedView videoId={ytVideoUrl} className="h-[89vh] w-[50vh] mb-8 max-w-7xl mx-auto" />}
+            {ytVideoUrl && <YoutubeEmbedView videoId={ytVideoUrl} className="h-[89vh] w-[50vh] mb-8 max-w-[95vw] mx-auto aspect-[9/16]" />}
 
             <div className="flex flex-row gap-1 px-4 pb-8 pt-4 max-w-7xl mx-auto justify-between">
                 {prevPainting ? (

@@ -127,6 +127,10 @@
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 29rem), 1fr));
   }
 
+  .card_grid li.full-width {
+    grid-column: 1 / -1;
+  }
+
   @media (max-width: 500px) {
     .card_grid {
       @apply gap-4 px-2;

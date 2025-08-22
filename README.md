@@ -22,7 +22,7 @@ Deployed website: [artelberg.netlify.app](https://artelberg.netlify.app)
 ---
 
 // TODO
-- https://youtube.com/shorts/aDhUUyaRN00 на основную
+- мб видос в попапе на старте
 - Loaders
 - Золотую евину - одну нужно выровнять
 - Иерусалим - нужно пример с интерьером
