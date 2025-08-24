@@ -4,7 +4,7 @@ import {PaintingCodable} from "@/lib/paintings";
 import Image from "next/image";
 import clsx from "clsx";
 
-export function PaintingCardRowView({ slug, title, description, images }: PaintingCodable
+export function PaintingCardRowView({ slug, title, description, images, colors }: PaintingCodable
 ) {
     return (
         // target="_blank"
@@ -59,6 +59,13 @@ export function PaintingCardRowView({ slug, title, description, images }: Painti
 
                     {/*max-sm:hidden*/}
                     <div className="flex justify-between items-center mt-4 sm:mt-10">
+                        {/*<CardItem*/}
+                        {/*    translateZ={40}*/}
+                        {/*    className={`px-4 text-xl font-bold ${colors.includes("A") && "hidden"}`}*/}
+                        {/*>*/}
+                        {/*    {colors}*/}
+                        {/*</CardItem>*/}
+
                         <CardItem
                             translateZ={40}
                             className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold ml-auto"

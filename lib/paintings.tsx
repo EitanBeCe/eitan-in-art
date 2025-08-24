@@ -167,6 +167,7 @@ Enrich your surroundings with blessings and elegance through modern art that ble
             '/jlmColors/jlmColors3.jpeg',
             '/jlmColors/jlmColors1.jpeg',
             '/jlmColors/jlmColors2.jpeg',
+            '/jlmColors/jlmColors4.jpeg',
         ],
         instaVideoUrl: "https://www.instagram.com/p/DLCgioMs8qQ/",
         ytVideoUrl: "iCHlliKXBfM"

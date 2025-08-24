@@ -22,10 +22,8 @@ Deployed website: [artelberg.netlify.app](https://artelberg.netlify.app)
 ---
 
 // TODO
-- мб видос в попапе на старте
+- sentry?
 - Loaders
-- Золотую евину - одну нужно выровнять
-- Иерусалим - нужно пример с интерьером
 - Lazy from portfolio?
 -  .com?
 

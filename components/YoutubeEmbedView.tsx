@@ -5,9 +5,17 @@ import React from 'react'
 type YoutubeShortEmbedProps = {
     videoId: string
     className?: string
+    // isAutoplay?: boolean
 }
 
 const YoutubeShortEmbed: React.FC<YoutubeShortEmbedProps> = ({ videoId, className }) => {
+    // let embedUrl: string
+    // if (isAutoplay) {
+    //     embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&playsinline=1&rel=0`
+    // } else {
+    //     embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=0&modestbranding=1&rel=0`
+    // }
+
     const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=0&modestbranding=1&rel=0`
 
     return (
@@ -26,7 +34,7 @@ const YoutubeShortEmbed: React.FC<YoutubeShortEmbedProps> = ({ videoId, classNam
                     left: 0,
                     width: '100%',
                     height: '100%',
-                    // border: 'none',
+                    border: 'none',
                 }}
             />
         </div>

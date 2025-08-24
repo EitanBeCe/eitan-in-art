@@ -1,13 +1,16 @@
+import React from "react";
 import paintings, {PaintingCodable} from "@/lib/paintings";
 import {PaintingCardRowView} from "@/components/PaintingCardRowView";
-import React from "react";
-// import YoutubeEmbedView from "@/components/YoutubeEmbedView";
-// import {CardContainer} from "@/components/ui/3d-card";
-import YoutubeEmbedCardInsert from "@/components/YoutubeEmbedRowView";
+import YoutubeEmbedRowView from "@/components/YoutubeEmbedRowView";
 
 export default function Home() {
     return (
         <section className="section_container !py-4">
+            {/*<YoutubeEmbedView*/}
+            {/*    videoId="aDhUUyaRN00"*/}
+            {/*    className="h-[80vh] aspect-[9/16] rounded-xl max-h-[90vh] mx-auto"*/}
+            {/*/>*/}
+
             <ul className="card_grid">
                 {paintings.map((p: PaintingCodable, index: number) => (
                     <React.Fragment key={p.slug}>
@@ -15,12 +18,23 @@ export default function Home() {
                             <PaintingCardRowView {...p} />
                         </li>
 
-                        {/* вставка YouTube-карточки после определённого индекса */}
-                        <YoutubeEmbedCardInsert
+                        {/* video on certain indices */}
+                        <YoutubeEmbedRowView
                             currentIndex={index}
                             insertAtIndex={2}
                             videoId="aDhUUyaRN00"
                         />
+                        <YoutubeEmbedRowView
+                            currentIndex={index}
+                            insertAtIndex={6}
+                            videoId="PyOeWYCKT-I"
+                        />
+                        <YoutubeEmbedRowView
+                            currentIndex={index}
+                            insertAtIndex={9}
+                            videoId="iCHlliKXBfM"
+                        />
+
                     </React.Fragment>
                 ))}
             </ul>

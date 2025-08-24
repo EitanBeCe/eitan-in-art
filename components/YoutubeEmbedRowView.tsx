@@ -2,17 +2,17 @@
 import { CardContainer } from '@/components/ui/3d-card'
 import YoutubeEmbedView from '@/components/YoutubeEmbedView'
 
-type YoutubeEmbedCardInsertProps = {
+type YoutubeEmbedRowViewProps = {
     currentIndex: number
     insertAtIndex: number
     videoId: string
 }
 
-export default function YoutubeEmbedCardInsert({
+export default function YoutubeEmbedRowView({
    currentIndex,
    insertAtIndex,
    videoId,
-}: YoutubeEmbedCardInsertProps) {
+}: YoutubeEmbedRowViewProps) {
     if (currentIndex !== insertAtIndex) return null
 
     return (
