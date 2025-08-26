@@ -2,6 +2,7 @@
 
 const nextConfig = {
     // FIXME
+    // FIXME
     output: "export",
     typescript: {
         ignoreBuildErrors: true
