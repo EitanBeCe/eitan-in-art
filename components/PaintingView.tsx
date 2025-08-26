@@ -53,6 +53,7 @@ export function PaintingView(
                 <h1 className="text-2xl px-2 md:text-3xl font-bold mb-5 text-center">{title}</h1>
 
                 <CardCarouselView
+                    key={slug}
                     images={images.map((i) => ({src: i, alt: title }))}
                     autoplayDelay={2000}
                     showPagination={true}
@@ -93,7 +94,7 @@ export function PaintingView(
 
             {/* Videos */}
             {instaVideoUrl && !ytVideoUrl && <InstagramVideoView videoUrl={instaVideoUrl} />}
-            {ytVideoUrl && <YoutubeEmbedView videoId={ytVideoUrl} className="h-[89vh] w-[50vh] mb-8 max-w-[95vw] mx-auto aspect-[9/16]" />}
+            {ytVideoUrl && <YoutubeEmbedView videoId={ytVideoUrl} className="max-h-[89vh] w-[50vh] mb-8 max-w-[95vw] mx-auto aspect-[9/16]" />}
 
             <div className="flex flex-row gap-1 px-4 pb-8 pt-4 max-w-7xl mx-auto justify-between">
                 {prevPainting ? (

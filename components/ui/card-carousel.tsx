@@ -3,7 +3,6 @@
 import React, {useEffect, useState} from "react"
 import Image from "next/image"
 import { Swiper, SwiperSlide } from "swiper/react"
-
 import "swiper/css"
 import "swiper/css/effect-coverflow"
 import "swiper/css/pagination"
@@ -33,6 +32,7 @@ export const CardCarouselView: React.FC<CarouselProps> = ({
   .swiper {
     width: 100%;
     padding-bottom: 50px;
+    will-change: transform;
   }
   
   .swiper-slide {
@@ -64,6 +64,7 @@ export const CardCarouselView: React.FC<CarouselProps> = ({
   .swiper-slide img {
     display: block;
     width: 100%;
+    backface-visibility: hidden;
   }
   
   .swiper-3d .swiper-slide-shadow-left {
@@ -122,6 +123,9 @@ export const CardCarouselView: React.FC<CarouselProps> = ({
                     <div className="flex w-full items-center justify-center gap-4">
                         <div className={`w-full ${images.length <= 2 && "max-sm:px-2"}`}>
                             <Swiper
+                                observer
+                                observeParents
+                                observeSlideChildren
                                 autoplay={{
                                     delay: autoplayDelay,
                                     disableOnInteraction: false
@@ -169,6 +173,7 @@ export const CardCarouselView: React.FC<CarouselProps> = ({
                                         }
                                     }
                                 }}
+
                             >
                                 {/*{images.length < 3 ? (*/}
                                 {/*    <div className="flex gap-4 justify-center">*/}
@@ -191,19 +196,37 @@ export const CardCarouselView: React.FC<CarouselProps> = ({
                                 {/*    </div>*/}
                                 {/*) : (*/}
                                     <>
+                                        {/*{images.map((image, index) => (*/}
+                                        {/*    <SwiperSlide key={`hq-${index}`}>*/}
+                                        {/*        <div*/}
+                                        {/*            className="aspect-[4/5] w-full rounded-3xl"*/}
+                                        {/*            onClick={() => handleImageClick(image.src)}*/}
+                                        {/*        >*/}
+                                        {/*            <Image*/}
+                                        {/*                src={image.src}*/}
+                                        {/*                width={500}*/}
+                                        {/*                height={500}*/}
+                                        {/*                className="w-full h-full rounded-xl object-cover"*/}
+                                        {/*                alt={image.alt}*/}
+                                        {/*                priority={index === 0 || index === 1 || index === images.length - 1}*/}
+                                        {/*            />*/}
+                                        {/*        </div>*/}
+                                        {/*    </SwiperSlide>*/}
+                                        {/*))}*/}
                                         {images.map((image, index) => (
                                             <SwiperSlide key={`hq-${index}`}>
-                                                <div
-                                                    className="aspect-[4/5] w-full rounded-3xl"
-                                                    onClick={() => handleImageClick(image.src)}
-                                                >
+                                                <div className="aspect-[4/5] w-full rounded-3xl" onClick={() => handleImageClick(image.src)}>
                                                     <Image
                                                         src={image.src}
-                                                        width={500}
-                                                        height={500}
-                                                        className="w-full h-full rounded-xl object-cover"
+                                                        width={800}
+                                                        height={1000}
                                                         alt={image.alt}
-                                                        priority={index === 0 || index === 1 || index === images.length - 1}
+                                                        className="w-full h-full rounded-xl object-cover"
+                                                        // loading={index < 3 ? "eager" : "lazy"}
+                                                        loading={"eager"}
+                                                        // priority={index === 0 || index === 1 || index === images.length - 1}
+                                                        priority={index < 2}
+                                                        sizes="(max-width: 768px) 80vw, 400px"
                                                     />
                                                 </div>
                                             </SwiperSlide>
@@ -216,10 +239,13 @@ export const CardCarouselView: React.FC<CarouselProps> = ({
                                                 >
                                                     <Image
                                                         src={image.src}
-                                                        width={200}
-                                                        height={200}
+                                                        width={800}
+                                                        height={1000}
                                                         className="w-full h-full rounded-xl object-cover"
                                                         alt={image.alt}
+                                                        // loading={index < 3 ? "eager" : "lazy"}
+                                                        // priority={index < 2}
+                                                        sizes="(max-width: 768px) 80vw, 400px"
                                                     />
                                                 </div>
                                             </SwiperSlide>

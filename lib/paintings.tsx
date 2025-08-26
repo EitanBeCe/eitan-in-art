@@ -66,7 +66,7 @@ Israel
       '/amIsraelChai/amIsraelChai10.jpeg',
     ],
       instaVideoUrl: "https://www.instagram.com/p/C977SDFsmKt/?img_index=1",
-      ytVideoUrl: "https://www.youtube.com/shorts/8jxYF23yJ-0"
+      ytVideoUrl: "8jxYF23yJ-0"
   },
     {
         slug: "mizmor-ledavid-pink",
@@ -167,7 +167,7 @@ Enrich your surroundings with blessings and elegance through modern art that ble
             '/jlmColors/jlmColors3.jpeg',
             '/jlmColors/jlmColors1.jpeg',
             '/jlmColors/jlmColors2.jpeg',
-            '/jlmColors/jlmColors4.jpeg',
+            '/jlmColors/jlmColors4.png',
         ],
         instaVideoUrl: "https://www.instagram.com/p/DLCgioMs8qQ/",
         ytVideoUrl: "iCHlliKXBfM"
