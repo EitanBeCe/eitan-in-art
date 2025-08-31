@@ -15,6 +15,33 @@ export interface PaintingCodable {
 }
 
 const paintings: PaintingCodable[] = [
+    {
+        slug: "home-blessing-black-and-blue",
+        title: "Home Blessing Black and Blue",
+        description: `Home Blessing in Hebrew with a modern twist. This piece combines traditional Hebrew calligraphy with graffiti art, creating a unique and vibrant atmosphere for your home.
+    
+Share your favorite colors, words, and desired size with me, and I’ll transform your space into a Masterpiece.
+
+Enrich your surroundings with blessings and elegance through modern art that blends traditional Hebrew calligraphy with graffiti. Neon shades and backlighting options are available for a unique effect.`,
+        paint: "Acrylic and Spray on Canvas",
+        size: "100x80",
+        colors: "⚫️ 🔵 ⚪️",
+        isSold: true,
+        isPrintsAvailable: true,
+        wasExhibited: false,
+        price: 5000,
+        images: [
+            '/homeBlessingBlackBlue/homeBlessingBlackBlue1.jpeg',
+            '/homeBlessingBlackBlue/homeBlessingBlackBlue3.jpeg',
+            '/homeBlessingBlackBlue/homeBlessingBlackBlue2.jpeg',
+            '/homeBlessingBlackBlue/homeBlessingBlackBlue4.jpeg',
+            '/homeBlessingBlackBlue/homeBlessingBlackBlue5.jpeg',
+            '/homeBlessingBlackBlue/homeBlessingBlackBlue6.jpeg',
+            '/homeBlessingBlackBlue/homeBlessingBlackBlue7.jpeg',
+        ],
+        instaVideoUrl: "https://www.instagram.com/p/DKcG1vTMQQP/",
+        ytVideoUrl: "oBU12a86hrg"
+    },
   {
     slug: "am-israel-chai",
     title: "Am Israel Chai. 23 languages",
@@ -120,33 +147,6 @@ Enrich your surroundings with blessings and elegance through modern art that ble
         '/homeBlessingBlackGold/homeBlessingBlackGold1.jpeg',
         '/homeBlessingBlackGold/homeBlessingBlackGold4.jpeg',
     ]
-  },
-  {
-    slug: "home-blessing-black-and-blue",
-    title: "Home Blessing Black and Blue",
-    description: `Home Blessing in Hebrew with a modern twist. This piece combines traditional Hebrew calligraphy with graffiti art, creating a unique and vibrant atmosphere for your home.
-    
-Share your favorite colors, words, and desired size with me, and I’ll transform your space into a Masterpiece.
-
-Enrich your surroundings with blessings and elegance through modern art that blends traditional Hebrew calligraphy with graffiti. Neon shades and backlighting options are available for a unique effect.`,
-    paint: "Acrylic and Spray on Canvas",
-    size: "100x80",
-    colors: "⚫️ 🔵 ⚪️",
-    isSold: true,
-    isPrintsAvailable: true,
-    wasExhibited: false,
-    price: 5000,
-    images: [
-        '/homeBlessingBlackBlue/homeBlessingBlackBlue1.jpeg',
-        '/homeBlessingBlackBlue/homeBlessingBlackBlue3.jpeg',
-        '/homeBlessingBlackBlue/homeBlessingBlackBlue2.jpeg',
-        '/homeBlessingBlackBlue/homeBlessingBlackBlue4.jpeg',
-        '/homeBlessingBlackBlue/homeBlessingBlackBlue5.jpeg',
-        '/homeBlessingBlackBlue/homeBlessingBlackBlue6.jpeg',
-        '/homeBlessingBlackBlue/homeBlessingBlackBlue7.jpeg',
-    ],
-      instaVideoUrl: "https://www.instagram.com/p/DKcG1vTMQQP/",
-      ytVideoUrl: "oBU12a86hrg"
   },
     {
         slug: "jerusalem-colors",
