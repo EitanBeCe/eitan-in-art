@@ -18,17 +18,7 @@ Deployed website: [artelberg.netlify.app](https://artelberg.netlify.app)
 - **ThemeProvider** — light/dark mode support
 - **YouTube embed** — embedding videos from YouTube
 - **Instagram embed** — embedding videos and posts from Instagram
-
----
-
-// TODO
-- Ads?
-- убрать дорогую с первого места?
-- в гугле не показывает сайт
-- sentry?
-- Loaders
-- Lazy from portfolio?
--  .com?
+- **Netlify** — hosting and deployment
 
 ---
 
