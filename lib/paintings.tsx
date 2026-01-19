@@ -172,6 +172,29 @@ Enrich your surroundings with blessings and elegance through modern art that ble
         instaVideoUrl: "https://www.instagram.com/p/DLCgioMs8qQ/",
         ytVideoUrl: "iCHlliKXBfM"
     },
+    {
+        slug: "home-blessing-autumn",
+        title: "Autumn at Home",
+        description: `For those who want the autumn vibes back.
+
+Home Blessing in Hebrew with a modern twist. This piece combines traditional Hebrew calligraphy with graffiti art, creating a unique and vibrant atmosphere for your home.
+    
+Share your favorite colors, words, and desired size with me, and I’ll transform your space into a Masterpiece.
+
+Enrich your surroundings with blessings and elegance through modern art that blends traditional Hebrew calligraphy with graffiti. Neon shades and backlighting options are available for a unique effect.`,
+        paint: "Acrylic and Spray on Canvas",
+        size: "80x60",
+        colors: "⚫️ 🟡 ⚪️ 🟢 🟠 🔴",
+        isSold: false,
+        isPrintsAvailable: false,
+        wasExhibited: false,
+        price: 4000,
+        images: [
+            "/autumnHB/autumnHB1.jpeg",
+            "/autumnHB/autumnHB2.jpeg"
+        ],
+        ytVideoUrl: "aWFuoz0pNNQ"
+    },
   {
     slug: "home-blessing-gold",
     title: "Home Blessing Pure Gold",
